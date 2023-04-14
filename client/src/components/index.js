@@ -4,3 +4,4 @@ export { default as Card } from "./Card/Card";
 export { default as Rightbar } from "./Rightbar/Rightbar";
 export { default as FeaturedMatches } from "./FeaturedMatches/FeaturedMatches";
 export { default as Main } from "./Main/Main";
+export { default as Pointstable } from "./Pointstable/Pointstable";
