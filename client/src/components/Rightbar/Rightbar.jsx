@@ -10,8 +10,12 @@ import {
   TableBody,
   Table,
   CssBaseline,
+  Avatar,
+  Stack,
+  Typography,
 } from "@mui/material";
 import data from "../../../../scripts/live-table.json";
+import "./Rightbar.css";
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
@@ -33,19 +37,16 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
   },
 }));
 
-function createData(name, calories, fat, carbs, protein) {
-  return { name, calories, fat, carbs, protein };
-}
 export default function Rightbar() {
   return (
     <Grid container justifyContent={"center"} alignItems={"center"}>
       <CssBaseline />
-      <Grid item sx={{ mt: 6 }}>
+      <Grid>
         <TableContainer
           component={Paper}
           sx={{ position: { xs: "sticky", sm: "sticky", md: "sticky" } }}
         >
-          <Table sx={{ minWidth: 700 }} aria-label="customized table">
+          <Table sx={{ minWidth: 600 }} aria-label="customized table">
             <TableHead>
               <TableRow>
                 <StyledTableCell>Pos</StyledTableCell>
@@ -57,7 +58,7 @@ export default function Rightbar() {
                 <StyledTableCell align="right">NR</StyledTableCell>
                 <StyledTableCell align="right">NRR</StyledTableCell>
                 <StyledTableCell align="right">P</StyledTableCell>
-                <StyledTableCell align="center">Last</StyledTableCell>
+                <StyledTableCell align="left">Last Results</StyledTableCell>
                 <StyledTableCell align="right">Next</StyledTableCell>
               </TableRow>
             </TableHead>
@@ -65,18 +66,49 @@ export default function Rightbar() {
               {data.map((row) => (
                 <StyledTableRow key={row.pos}>
                   <StyledTableCell>{row.pos}</StyledTableCell>
-                  <StyledTableCell component="th" scope="row">
-                    {row.name}
+                  <StyledTableCell>
+                    <Stack direction="row" alignItems={"center"}>
+                      <Avatar
+                        alt="Example Alt"
+                        src={row.img}
+                        sx={{ height: "1%", width: "12%", mr: 1 }}
+                      />
+                      <Typography variant="p" fontSize={15}>
+                        {row.name}
+                      </Typography>
+                    </Stack>
                   </StyledTableCell>
-                  <StyledTableCell align="right">{row.matches}</StyledTableCell>
-                  <StyledTableCell align="right">{row.won}</StyledTableCell>
-                  <StyledTableCell align="right">{row.lost}</StyledTableCell>
-                  <StyledTableCell align="right">{row.tie}</StyledTableCell>
-                  <StyledTableCell align="right">{row["n/r"]}</StyledTableCell>
-                  <StyledTableCell align="right">{row.nrr}</StyledTableCell>
-                  <StyledTableCell align="right">{row.points}</StyledTableCell>
-                  <StyledTableCell>{row.name}</StyledTableCell>
-                  <StyledTableCell align="right">{row.next}</StyledTableCell>
+                  <StyledTableCell component="th" scope="row" align="right">
+                    {row.matches}
+                  </StyledTableCell>
+                  <StyledTableCell component="th" scope="row" align="right">
+                    {row.won}
+                  </StyledTableCell>
+                  <StyledTableCell component="th" scope="row" align="right">
+                    {row.lost}
+                  </StyledTableCell>
+                  <StyledTableCell component="th" scope="row" align="right">
+                    {row.tie}
+                  </StyledTableCell>
+                  <StyledTableCell component="th" scope="row" align="right">
+                    {row["n/r"]}
+                  </StyledTableCell>
+                  <StyledTableCell component="th" scope="row" align="right">
+                    {row.nrr}
+                  </StyledTableCell>
+                  <StyledTableCell component="th" scope="row" align="right">
+                    {row.points}
+                  </StyledTableCell>
+                  <StyledTableCell>
+                    <Stack direction={"row"}>
+                      {row.last.map((res) => (
+                        <span className={`rf ${res} ih-pt-g`}>{res}</span>
+                      ))}
+                    </Stack>
+                  </StyledTableCell>
+                  <StyledTableCell component="th" scope="row" align="right">
+                    {row.next}
+                  </StyledTableCell>
                 </StyledTableRow>
               ))}
             </TableBody>
