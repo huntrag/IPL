@@ -4,6 +4,7 @@ import TextField from "@mui/material/TextField";
 import Autocomplete, { createFilterOptions } from "@mui/material/Autocomplete";
 
 import { Box } from "@mui/material";
+import { useEffect } from "react";
 
 const filterOptions = createFilterOptions({
   matchFrom: "any",
@@ -13,6 +14,8 @@ const filterOptions = createFilterOptions({
 export default function Filter() {
   const [value, setValue] = useState("");
 
+  useEffect(() => {}, [value]);
+
   return (
     <Box>
       <Autocomplete
@@ -21,7 +24,7 @@ export default function Filter() {
           setValue(newValue);
         }}
         id="filter-demo"
-        options={top100Films}
+        options={yearsWithSeasons}
         getOptionLabel={(option) => `Season ${option.season} (${option.year})`}
         filterOptions={filterOptions}
         sx={{ width: 300 }}
@@ -32,7 +35,7 @@ export default function Filter() {
 }
 
 // Top 100 films as rated by IMDb users. http://www.imdb.com/chart/top
-const top100Films = [
+const yearsWithSeasons = [
   { season: "1", year: 2008 },
   { season: "2", year: 2009 },
   { season: "3", year: 2010 },

@@ -5,7 +5,9 @@
     "no": "Match 20",
     "venue": "M.Chinnaswamy Stadium, Bengaluru",
     "team1": "Royal Challengers Bangalore",
-    "team2": "Delhi Capitals"
+    "team1Short": "RCB",
+    "team2": "Delhi Capitals",
+    "team2Short": "DC"
   },
   {
     "date": "Apr 15",
@@ -13,7 +15,9 @@
     "no": "Match 21",
     "venue": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",
     "team1": "Lucknow Super Giants",
-    "team2": "Punjab Kings"
+    "team1Short": "LSG",
+    "team2": "Punjab Kings",
+    "team2Short": "PBKS"
   },
   {
     "date": "Apr 16",
@@ -21,7 +25,9 @@
     "no": "Match 22",
     "venue": "Wankhede Stadium, Mumbai",
     "team1": "Mumbai Indians",
-    "team2": "Kolkata Knight Riders"
+    "team1Short": "MI",
+    "team2": "Kolkata Knight Riders",
+    "team2Short": "KKR"
   },
   {
     "date": "Apr 16",
@@ -29,7 +35,9 @@
     "no": "Match 23",
     "venue": "Narendra Modi Stadium, Ahmedabad",
     "team1": "Gujarat Titans",
-    "team2": "Rajasthan Royals"
+    "team1Short": "GT",
+    "team2": "Rajasthan Royals",
+    "team2Short": "RR"
   },
   {
     "date": "Apr 17",
@@ -37,7 +45,9 @@
     "no": "Match 24",
     "venue": "M.Chinnaswamy Stadium, Bengaluru",
     "team1": "Royal Challengers Bangalore",
-    "team2": "Chennai Super Kings"
+    "team1Short": "RCB",
+    "team2": "Chennai Super Kings",
+    "team2Short": "CSK"
   },
   {
     "date": "Apr 18",
@@ -45,7 +55,9 @@
     "no": "Match 25",
     "venue": "Rajiv Gandhi International Stadium, Uppal, Hyderabad",
     "team1": "Sunrisers Hyderabad",
-    "team2": "Mumbai Indians"
+    "team1Short": "SRH",
+    "team2": "Mumbai Indians",
+    "team2Short": "MI"
   },
   {
     "date": "Apr 19",
@@ -53,7 +65,9 @@
     "no": "Match 26",
     "venue": "Sawai Mansingh Stadium, Jaipur",
     "team1": "Rajasthan Royals",
-    "team2": "Lucknow Super Giants"
+    "team1Short": "RR",
+    "team2": "Lucknow Super Giants",
+    "team2Short": "LSG"
   },
   {
     "date": "Apr 20",
@@ -61,7 +75,9 @@
     "no": "Match 27",
     "venue": "Punjab Cricket Association IS Bindra Stadium, Mohali, Chandigarh",
     "team1": "Punjab Kings",
-    "team2": "Royal Challengers Bangalore"
+    "team1Short": "PBKS",
+    "team2": "Royal Challengers Bangalore",
+    "team2Short": "RCB"
   },
   {
     "date": "Apr 20",
@@ -69,7 +85,9 @@
     "no": "Match 28",
     "venue": "Arun Jaitley Stadium, Delhi",
     "team1": "Delhi Capitals",
-    "team2": "Kolkata Knight Riders"
+    "team1Short": "DC",
+    "team2": "Kolkata Knight Riders",
+    "team2Short": "KKR"
   },
   {
     "date": "Apr 21",
@@ -77,7 +95,9 @@
     "no": "Match 29",
     "venue": "MA Chidambaram Stadium, Chennai",
     "team1": "Chennai Super Kings",
-    "team2": "Sunrisers Hyderabad"
+    "team1Short": "CSK",
+    "team2": "Sunrisers Hyderabad",
+    "team2Short": "SRH"
   },
   {
     "date": "Apr 22",
@@ -85,7 +105,9 @@
     "no": "Match 30",
     "venue": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",
     "team1": "Lucknow Super Giants",
-    "team2": "Gujarat Titans"
+    "team1Short": "LSG",
+    "team2": "Gujarat Titans",
+    "team2Short": "GT"
   },
   {
     "date": "Apr 22",
@@ -93,7 +115,9 @@
     "no": "Match 31",
     "venue": "Wankhede Stadium, Mumbai",
     "team1": "Mumbai Indians",
-    "team2": "Punjab Kings"
+    "team1Short": "MI",
+    "team2": "Punjab Kings",
+    "team2Short": "PBKS"
   },
   {
     "date": "Apr 23",
@@ -101,7 +125,9 @@
     "no": "Match 32",
     "venue": "M.Chinnaswamy Stadium, Bengaluru",
     "team1": "Royal Challengers Bangalore",
-    "team2": "Rajasthan Royals"
+    "team1Short": "RCB",
+    "team2": "Rajasthan Royals",
+    "team2Short": "RR"
   },
   {
     "date": "Apr 23",
@@ -109,7 +135,9 @@
     "no": "Match 33",
     "venue": "Eden Gardens, Kolkata",
     "team1": "Kolkata Knight Riders",
-    "team2": "Chennai Super Kings"
+    "team1Short": "KKR",
+    "team2": "Chennai Super Kings",
+    "team2Short": "CSK"
   },
   {
     "date": "Apr 24",
@@ -117,7 +145,9 @@
     "no": "Match 34",
     "venue": "Rajiv Gandhi International Stadium, Uppal, Hyderabad",
     "team1": "Sunrisers Hyderabad",
-    "team2": "Delhi Capitals"
+    "team1Short": "SRH",
+    "team2": "Delhi Capitals",
+    "team2Short": "DC"
   },
   {
     "date": "Apr 25",
@@ -125,7 +155,9 @@
     "no": "Match 35",
     "venue": "Narendra Modi Stadium, Ahmedabad",
     "team1": "Gujarat Titans",
-    "team2": "Mumbai Indians"
+    "team1Short": "GT",
+    "team2": "Mumbai Indians",
+    "team2Short": "MI"
   },
   {
     "date": "Apr 26",
@@ -133,7 +165,9 @@
     "no": "Match 36",
     "venue": "M.Chinnaswamy Stadium, Bengaluru",
     "team1": "Royal Challengers Bangalore",
-    "team2": "Kolkata Knight Riders"
+    "team1Short": "RCB",
+    "team2": "Kolkata Knight Riders",
+    "team2Short": "KKR"
   },
   {
     "date": "Apr 27",
@@ -141,7 +175,9 @@
     "no": "Match 37",
     "venue": "Sawai Mansingh Stadium, Jaipur",
     "team1": "Rajasthan Royals",
-    "team2": "Chennai Super Kings"
+    "team1Short": "RR",
+    "team2": "Chennai Super Kings",
+    "team2Short": "CSK"
   },
   {
     "date": "Apr 28",
@@ -149,7 +185,9 @@
     "no": "Match 38",
     "venue": "Punjab Cricket Association IS Bindra Stadium, Mohali, Chandigarh",
     "team1": "Punjab Kings",
-    "team2": "Lucknow Super Giants"
+    "team1Short": "PBKS",
+    "team2": "Lucknow Super Giants",
+    "team2Short": "LSG"
   },
   {
     "date": "Apr 29",
@@ -157,7 +195,9 @@
     "no": "Match 39",
     "venue": "Eden Gardens, Kolkata",
     "team1": "Kolkata Knight Riders",
-    "team2": "Gujarat Titans"
+    "team1Short": "KKR",
+    "team2": "Gujarat Titans",
+    "team2Short": "GT"
   },
   {
     "date": "Apr 29",
@@ -165,7 +205,9 @@
     "no": "Match 40",
     "venue": "Arun Jaitley Stadium, Delhi",
     "team1": "Delhi Capitals",
-    "team2": "Sunrisers Hyderabad"
+    "team1Short": "DC",
+    "team2": "Sunrisers Hyderabad",
+    "team2Short": "SRH"
   },
   {
     "date": "Apr 30",
@@ -173,7 +215,9 @@
     "no": "Match 41",
     "venue": "MA Chidambaram Stadium, Chennai",
     "team1": "Chennai Super Kings",
-    "team2": "Punjab Kings"
+    "team1Short": "CSK",
+    "team2": "Punjab Kings",
+    "team2Short": "PBKS"
   },
   {
     "date": "Apr 30",
@@ -181,7 +225,9 @@
     "no": "Match 42",
     "venue": "Wankhede Stadium, Mumbai",
     "team1": "Mumbai Indians",
-    "team2": "Rajasthan Royals"
+    "team1Short": "MI",
+    "team2": "Rajasthan Royals",
+    "team2Short": "RR"
   },
   {
     "date": "May 01",
@@ -189,7 +235,9 @@
     "no": "Match 43",
     "venue": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",
     "team1": "Lucknow Super Giants",
-    "team2": "Royal Challengers Bangalore"
+    "team1Short": "LSG",
+    "team2": "Royal Challengers Bangalore",
+    "team2Short": "RCB"
   },
   {
     "date": "May 02",
@@ -197,7 +245,9 @@
     "no": "Match 44",
     "venue": "Narendra Modi Stadium, Ahmedabad",
     "team1": "Gujarat Titans",
-    "team2": "Delhi Capitals"
+    "team1Short": "GT",
+    "team2": "Delhi Capitals",
+    "team2Short": "DC"
   },
   {
     "date": "May 03",
@@ -205,7 +255,9 @@
     "no": "Match 45",
     "venue": "Punjab Cricket Association IS Bindra Stadium, Mohali, Chandigarh",
     "team1": "Punjab Kings",
-    "team2": "Mumbai Indians"
+    "team1Short": "PBKS",
+    "team2": "Mumbai Indians",
+    "team2Short": "MI"
   },
   {
     "date": "May 04",
@@ -213,7 +265,9 @@
     "no": "Match 46",
     "venue": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",
     "team1": "Lucknow Super Giants",
-    "team2": "Chennai Super Kings"
+    "team1Short": "LSG",
+    "team2": "Chennai Super Kings",
+    "team2Short": "CSK"
   },
   {
     "date": "May 04",
@@ -221,7 +275,9 @@
     "no": "Match 47",
     "venue": "Rajiv Gandhi International Stadium, Uppal, Hyderabad",
     "team1": "Sunrisers Hyderabad",
-    "team2": "Kolkata Knight Riders"
+    "team1Short": "SRH",
+    "team2": "Kolkata Knight Riders",
+    "team2Short": "KKR"
   },
   {
     "date": "May 05",
@@ -229,7 +285,9 @@
     "no": "Match 48",
     "venue": "Sawai Mansingh Stadium, Jaipur",
     "team1": "Rajasthan Royals",
-    "team2": "Gujarat Titans"
+    "team1Short": "RR",
+    "team2": "Gujarat Titans",
+    "team2Short": "GT"
   },
   {
     "date": "May 06",
@@ -237,7 +295,9 @@
     "no": "Match 49",
     "venue": "MA Chidambaram Stadium, Chennai",
     "team1": "Chennai Super Kings",
-    "team2": "Mumbai Indians"
+    "team1Short": "CSK",
+    "team2": "Mumbai Indians",
+    "team2Short": "MI"
   },
   {
     "date": "May 06",
@@ -245,7 +305,9 @@
     "no": "Match 50",
     "venue": "Arun Jaitley Stadium, Delhi",
     "team1": "Delhi Capitals",
-    "team2": "Royal Challengers Bangalore"
+    "team1Short": "DC",
+    "team2": "Royal Challengers Bangalore",
+    "team2Short": "RCB"
   },
   {
     "date": "May 07",
@@ -253,7 +315,9 @@
     "no": "Match 51",
     "venue": "Narendra Modi Stadium, Ahmedabad",
     "team1": "Gujarat Titans",
-    "team2": "Lucknow Super Giants"
+    "team1Short": "GT",
+    "team2": "Lucknow Super Giants",
+    "team2Short": "LSG"
   },
   {
     "date": "May 07",
@@ -261,7 +325,9 @@
     "no": "Match 52",
     "venue": "Sawai Mansingh Stadium, Jaipur",
     "team1": "Rajasthan Royals",
-    "team2": "Sunrisers Hyderabad"
+    "team1Short": "RR",
+    "team2": "Sunrisers Hyderabad",
+    "team2Short": "SRH"
   },
   {
     "date": "May 08",
@@ -269,7 +335,9 @@
     "no": "Match 53",
     "venue": "Eden Gardens, Kolkata",
     "team1": "Kolkata Knight Riders",
-    "team2": "Punjab Kings"
+    "team1Short": "KKR",
+    "team2": "Punjab Kings",
+    "team2Short": "PBKS"
   },
   {
     "date": "May 09",
@@ -277,7 +345,9 @@
     "no": "Match 54",
     "venue": "Wankhede Stadium, Mumbai",
     "team1": "Mumbai Indians",
-    "team2": "Royal Challengers Bangalore"
+    "team1Short": "MI",
+    "team2": "Royal Challengers Bangalore",
+    "team2Short": "RCB"
   },
   {
     "date": "May 10",
@@ -285,7 +355,9 @@
     "no": "Match 55",
     "venue": "MA Chidambaram Stadium, Chennai",
     "team1": "Chennai Super Kings",
-    "team2": "Delhi Capitals"
+    "team1Short": "CSK",
+    "team2": "Delhi Capitals",
+    "team2Short": "DC"
   },
   {
     "date": "May 11",
@@ -293,7 +365,9 @@
     "no": "Match 56",
     "venue": "Eden Gardens, Kolkata",
     "team1": "Kolkata Knight Riders",
-    "team2": "Rajasthan Royals"
+    "team1Short": "KKR",
+    "team2": "Rajasthan Royals",
+    "team2Short": "RR"
   },
   {
     "date": "May 12",
@@ -301,7 +375,9 @@
     "no": "Match 57",
     "venue": "Wankhede Stadium, Mumbai",
     "team1": "Mumbai Indians",
-    "team2": "Gujarat Titans"
+    "team1Short": "MI",
+    "team2": "Gujarat Titans",
+    "team2Short": "GT"
   },
   {
     "date": "May 13",
@@ -309,7 +385,9 @@
     "no": "Match 58",
     "venue": "Rajiv Gandhi International Stadium, Uppal, Hyderabad",
     "team1": "Sunrisers Hyderabad",
-    "team2": "Lucknow Super Giants"
+    "team1Short": "SRH",
+    "team2": "Lucknow Super Giants",
+    "team2Short": "LSG"
   },
   {
     "date": "May 13",
@@ -317,7 +395,9 @@
     "no": "Match 59",
     "venue": "Arun Jaitley Stadium, Delhi",
     "team1": "Delhi Capitals",
-    "team2": "Punjab Kings"
+    "team1Short": "DC",
+    "team2": "Punjab Kings",
+    "team2Short": "PBKS"
   },
   {
     "date": "May 14",
@@ -325,7 +405,9 @@
     "no": "Match 60",
     "venue": "Sawai Mansingh Stadium, Jaipur",
     "team1": "Rajasthan Royals",
-    "team2": "Royal Challengers Bangalore"
+    "team1Short": "RR",
+    "team2": "Royal Challengers Bangalore",
+    "team2Short": "RCB"
   },
   {
     "date": "May 14",
@@ -333,7 +415,9 @@
     "no": "Match 61",
     "venue": "MA Chidambaram Stadium, Chennai",
     "team1": "Chennai Super Kings",
-    "team2": "Kolkata Knight Riders"
+    "team1Short": "CSK",
+    "team2": "Kolkata Knight Riders",
+    "team2Short": "KKR"
   },
   {
     "date": "May 15",
@@ -341,7 +425,9 @@
     "no": "Match 62",
     "venue": "Narendra Modi Stadium, Ahmedabad",
     "team1": "Gujarat Titans",
-    "team2": "Sunrisers Hyderabad"
+    "team1Short": "GT",
+    "team2": "Sunrisers Hyderabad",
+    "team2Short": "SRH"
   },
   {
     "date": "May 16",
@@ -349,7 +435,9 @@
     "no": "Match 63",
     "venue": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",
     "team1": "Lucknow Super Giants",
-    "team2": "Mumbai Indians"
+    "team1Short": "LSG",
+    "team2": "Mumbai Indians",
+    "team2Short": "MI"
   },
   {
     "date": "May 17",
@@ -357,7 +445,9 @@
     "no": "Match 64",
     "venue": "Himachal Pradesh Cricket Association Stadium, Dharamsala",
     "team1": "Punjab Kings",
-    "team2": "Delhi Capitals"
+    "team1Short": "PBKS",
+    "team2": "Delhi Capitals",
+    "team2Short": "DC"
   },
   {
     "date": "May 18",
@@ -365,7 +455,9 @@
     "no": "Match 65",
     "venue": "Rajiv Gandhi International Stadium, Uppal, Hyderabad",
     "team1": "Sunrisers Hyderabad",
-    "team2": "Royal Challengers Bangalore"
+    "team1Short": "SRH",
+    "team2": "Royal Challengers Bangalore",
+    "team2Short": "RCB"
   },
   {
     "date": "May 19",
@@ -373,7 +465,9 @@
     "no": "Match 66",
     "venue": "Himachal Pradesh Cricket Association Stadium, Dharamsala",
     "team1": "Punjab Kings",
-    "team2": "Rajasthan Royals"
+    "team1Short": "PBKS",
+    "team2": "Rajasthan Royals",
+    "team2Short": "RR"
   },
   {
     "date": "May 20",
@@ -381,7 +475,9 @@
     "no": "Match 67",
     "venue": "Arun Jaitley Stadium, Delhi",
     "team1": "Delhi Capitals",
-    "team2": "Chennai Super Kings"
+    "team1Short": "DC",
+    "team2": "Chennai Super Kings",
+    "team2Short": "CSK"
   },
   {
     "date": "May 20",
@@ -389,7 +485,9 @@
     "no": "Match 68",
     "venue": "Eden Gardens, Kolkata",
     "team1": "Kolkata Knight Riders",
-    "team2": "Lucknow Super Giants"
+    "team1Short": "KKR",
+    "team2": "Lucknow Super Giants",
+    "team2Short": "LSG"
   },
   {
     "date": "May 21",
@@ -397,7 +495,9 @@
     "no": "Match 69",
     "venue": "Wankhede Stadium, Mumbai",
     "team1": "Mumbai Indians",
-    "team2": "Sunrisers Hyderabad"
+    "team1Short": "MI",
+    "team2": "Sunrisers Hyderabad",
+    "team2Short": "SRH"
   },
   {
     "date": "May 21",
@@ -405,6 +505,8 @@
     "no": "Match 70",
     "venue": "M.Chinnaswamy Stadium, Bengaluru",
     "team1": "Royal Challengers Bangalore",
-    "team2": "Gujarat Titans"
+    "team1Short": "RCB",
+    "team2": "Gujarat Titans",
+    "team2Short": "GT"
   }
 ]
