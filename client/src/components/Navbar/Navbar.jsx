@@ -81,7 +81,7 @@ const Navbar = () => {
   };
 
   return (
-    <AppBar position="fixed" open={open}>
+    <AppBar position="relative" open={open}>
       <Toolbar>
         <IconButton
           color="inherit"
