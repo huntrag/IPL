@@ -39,7 +39,14 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
 
 export default function Rightbar() {
   return (
-    <Grid container justifyContent={"center"} alignItems={"center"}>
+    <Grid
+      container
+      justifyContent={"center"}
+      alignItems={"center"}
+      flex={1}
+      alignSelf={"center"}
+      bgcolor="blue"
+    >
       <CssBaseline />
       <Grid>
         <TableContainer
