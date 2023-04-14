@@ -11,11 +11,7 @@ const FeaturedMatches = () => {
     color: theme.palette.text.secondary,
   }));
 
-  return (
-    <Grid container spacing={2}>
-        
-    </Grid>
-  );
+  return <Grid container spacing={2}></Grid>;
 };
 
 export default FeaturedMatches;
