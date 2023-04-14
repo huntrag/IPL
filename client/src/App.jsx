@@ -4,22 +4,32 @@ import "./App.css";
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 
 import { Home, About, Player, Players, Matches, Points, Stats } from "./pages";
-import { Layout } from "./components";
+import { Navbar, Sidebar, Main } from "./components";
+
+import { Box, Stack } from "@mui/material";
+import { useSelector } from "react-redux";
 
 function App() {
-  const Navbar = () => {
+  const Layout1 = () => {
+    const open = useSelector((state) => state.ui.drawerIsVis);
+
     return (
-      <div className="App">
-        <Layout />
-        <Outlet />
-      </div>
+      <Box className="App">
+        <Navbar />
+        <Stack direction="row" justifyContent="space-between">
+          <Sidebar />
+          <Main open={open}>
+            <Outlet />
+          </Main>
+        </Stack>
+      </Box>
     );
   };
 
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <Navbar />,
+      element: <Layout1 />,
       children: [
         {
           path: "/",
