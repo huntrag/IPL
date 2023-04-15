@@ -16,6 +16,7 @@ import {
 } from "@mui/material";
 import data from "../../../../scripts/live-table.json";
 import "./Pointstable.css";
+import Filter from "../Filter/Filter";
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
@@ -39,9 +40,17 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
 
 export default function Pointstable() {
   return (
-    <Grid container justifyContent={"center"} alignItems={"center"}>
+    <Grid
+      container
+      justifyContent={"center"}
+      alignItems={"center"}
+      rowSpacing={3}
+    >
       <CssBaseline />
-      <Grid>
+      <Grid item alignSelf={"start"}>
+        <Filter />
+      </Grid>
+      <Grid item>
         <TableContainer
           component={Paper}
           sx={{ position: { xs: "sticky", sm: "sticky", md: "sticky" } }}
