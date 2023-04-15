@@ -1,6 +1,6 @@
 import React from "react";
 import { FeaturedMatches, Rightbar } from "../../components";
-import { Box, Divider, Stack } from "@mui/material";
+import { Box, Divider, Stack, Typography } from "@mui/material";
 
 const Home = () => {
   return (
@@ -15,13 +15,21 @@ const Home = () => {
         justifyContent={"center"}
         direction="column"
       >
-        <Box>
+        <Stack direction={"column"} sx={{ m: 3 }}>
+          <Box sx={{ m: 3 }}>
+            <Typography variant="h4" gutterBottom>
+              Featured Matches
+            </Typography>
+          </Box>
           <FeaturedMatches />
-        </Box>
-        <Divider />
-        <Box>
+        </Stack>
+        <Divider sx={{ width: "80%", height: 2 }} />
+        <Stack direction={"column"} columnGap>
+          <Box sx={{ m: 3 }}>
+            <Typography variant="h4">Featured Players</Typography>
+          </Box>
           <FeaturedMatches />
-        </Box>
+        </Stack>
       </Stack>
 
       <Rightbar />
