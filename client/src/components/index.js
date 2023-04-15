@@ -6,4 +6,5 @@ export { default as FeaturedMatches } from "./FeaturedMatches/FeaturedMatches";
 export { default as FeaturedPlayers } from "./FeaturedPlayers/FeaturedPlayers";
 export { default as Main } from "./Main/Main";
 export { default as Pointstable } from "./Pointstable/Pointstable";
+export { default as PlayerInfo } from "./PlayerInfo/PlayerInfo";
 export { default as UpcomingMatchCard } from "./UpcomingMatchCard/UpcomingMatchCard";

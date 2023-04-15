@@ -4,89 +4,69 @@
     "played": 226,
     "specialization": "Batsman",
     "debut": 2008,
-    "sp1": 6788,
-    "sp2": 113,
-    "sp3": 36.69,
-    "sp4": 5
-  },
-  {
-    "name": "Mohammad Siraj",
-    "played": 68,
-    "specialization": "Bowler",
-    "debut": 2017,
-    "sp1": 64,
-    "sp2": "4/32",
-    "sp3": 8.7,
-    "sp4": 1
+    "sp": [6788, 113, 36.69, 5]
   },
   {
     "name": "MS Dhoni",
     "played": 68,
     "specialization": "Wicketkeeper",
     "debut": 2008,
-    "sp1": 5036,
-    "sp2": 84,
-    "sp3": 39.34,
-    "sp4": 138
+    "sp": [5036, 84, 39.34, 138]
   },
   {
     "name": "Rinku Singh",
     "played": 21,
     "specialization": "Batsman",
     "debut": 2017,
-    "sp1": 407,
-    "sp2": 58,
-    "sp3": 29.07,
-    "sp4": 0
+    "sp": [407, 58, 29.07, 0]
   },
   {
     "name": "Bhuvneshwar Kumar",
     "played": 150,
     "specialization": "Bowler",
     "debut": 2011,
-    "sp1": 157,
-    "sp2": "5/19",
-    "sp3": 7.34,
-    "sp4": 2
+    "sp": [157, "5/19", 7.34, 2]
   },
   {
     "name": "Jos Buttler",
     "played": 86,
     "specialization": "Wicketkeeper",
     "debut": 2016,
-    "sp1": 3035,
-    "sp2": 124,
-    "sp3": 40.47,
-    "sp4": 46
+    "sp": [3035, 124, 40.47, 46]
+  },
+  {
+    "name": "Anrich Nortje",
+    "played": 33,
+    "specialization": "Bowler",
+    "debut": 2020,
+    "sp": [45, "3/33", 8.23, 0]
   },
   {
     "name": "Rohit Sharma",
     "played": 230,
     "specialization": "Batsman",
     "debut": 2008,
-    "sp1": 5966,
-    "sp2": "109*",
-    "sp3": 30.28,
-    "sp4": 1
+    "sp": [5966, "109*", 30.28, 1]
   },
   {
     "name": "Mark Wood",
     "played": 4,
     "specialization": "Bowler",
     "debut": 2017,
-    "sp1": 9,
-    "sp2": "5/14",
-    "sp3": 9,
-    "sp4": 1
+    "sp": [9, "5/14", 9.0, 1]
   },
   {
     "name": "Shikhar Dhawan",
     "played": 210,
     "specialization": "Batsman",
     "debut": 2008,
-    "sp1": 6477,
-    "sp2": "106*",
-    "sp3": 35.98,
-    "sp4": 2
+    "sp": [6477, "106*", 35.98, 2]
+  },
+  {
+    "name": "Hardik Pandya",
+    "played": 110,
+    "specialization": "All Rounder",
+    "debut": 2015,
+    "sp": [1984, 146.31, 50, 8.72]
   }
 ]

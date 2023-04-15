@@ -25,7 +25,7 @@ const Home = () => {
             <FeaturedMatches />
           </Stack>
         </Paper>
-        <Divider sx={{ width: "80%", height: 2, m: 2 }} />
+        <Divider sx={{ width: "80%", height: 2, m: 4 }} />
         <Paper>
           <Stack direction={"column"} sx={{ m: 3 }}>
             <Box sx={{ m: 3 }}>

@@ -4,101 +4,71 @@ import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
-import { Avatar, CssBaseline, Divider, Stack } from "@mui/material";
+import { Avatar, CssBaseline, Divider, Stack, Box } from "@mui/material";
+import PlayerInfo from "../PlayerInfo/PlayerInfo";
 
 // player pic: https://scores.iplt20.com/ipl/playerimages/Virat%20Kohli.png
 
 export default function FeaturedPlayerCard(props) {
+  const player = props.player;
+
+  let keys;
+
+  if (player.specialization === "Batsman") {
+    keys = ["Total Runs", "Highest Score", "Average", "100s"];
+  } else if (player.specialization === "Bowler") {
+    keys = ["Wickets", "Best Figures", "Economy", "4W+"];
+  } else if (player.specialization === "Wicketkeeper") {
+    keys = ["Total Runs", "Highest Score", "Average", "Catches"];
+  } else {
+    keys = ["Total Runs", "Strike Rate", "Wickets", "Economy"];
+  }
+
+  let rows = [];
+
+  rows.push({ id: "Total Matches", value: player.played });
+  rows.push({ id: "Debut", value: player.debut });
+
+  keys.forEach((key, index) => {
+    rows.push({ id: key, value: player.sp[index] });
+  });
+
   return (
-    <Card key={props.match.no} sx={{ minWidth: 275 }}>
+    <Card key={player.name} sx={{ minWidth: 275 }}>
       <CssBaseline />
       <CardContent>
-        <Stack
-          direction="row"
-          justifyContent={"space-between"}
-          spacing={10}
-          sx={{ mb: 2 }}
-        >
-          <Typography sx={{ fontSize: 20 }} color="text.secondary" gutterBottom>
-            {`${props.match.no}`}
-          </Typography>
-          <Typography sx={{ fontSize: 17 }} color="text.secondary" gutterBottom>
-            {`${props.match.date} : ${props.match.time}`}
-          </Typography>
-        </Stack>
-
-        <Stack
-          direction="row"
-          justifyContent={"space-between"}
-          alignItems={"center"}
-          spacing={10}
-        >
-          <Stack direction="row" alignItems={"center"}>
-            <Avatar
-              alt="Example Alt"
-              sx={{ width: "50", mr: 1.5 }}
-              src={`https://scores.iplt20.com/ipl/teamlogos/${props.match.team1Short}.png?v=2`}
-            />
-            <Typography sx={{ fontSize: 20 }} variant="p" component="div">
-              {`${props.match.team1Short}`}
-            </Typography>
-          </Stack>
-          <Typography sx={{ fontSize: 20 }} variant="p" component="div">
-            143/6 (20)
-          </Typography>
-        </Stack>
-        <Stack
-          direction="row"
-          justifyContent={"space-between"}
-          alignItems={"center"}
-          spacing={10}
-        >
-          <Stack direction="row" alignItems={"center"}>
-            <Avatar
-              alt="Example Alt"
-              sx={{ width: "50", mr: 1.5 }}
-              src={`https://scores.iplt20.com/ipl/teamlogos/${props.match.team2Short}.png?v=2`}
-            />
-            <Typography sx={{ fontSize: 20 }} variant="p" component="div">
-              {`${props.match.team2Short}`}
-            </Typography>
-          </Stack>
-          <Typography sx={{ fontSize: 20 }} variant="p" component="div">
-            143/6 (20)
-          </Typography>
-        </Stack>
-        <Stack
-          direction="column"
-          justifyContent={"space-between"}
-          sx={{ mt: 2 }}
-        >
-          <Stack direction={"column"} sx={{ mb: 2 }}>
-            <Typography
-              sx={{ fontSize: 17 }}
-              variant="p"
-              color="text.secondary"
-              component="div"
+        <Stack direction="row" justifyContent={"space-around"}>
+          <Box
+            component="img"
+            bgcolor="transparent"
+            sx={{
+              ml: -5,
+              height: 233,
+            }}
+            alt={`${player.name}`}
+            src={`https://scores.iplt20.com/ipl/playerimages/${player.name}.png`}
+          />
+          <Stack>
+            <Stack
+              direction="row"
+              justifyContent={"space-evenly"}
+              alignItems={"baseline"}
             >
-              Player of the Match
-            </Typography>
-            <Typography
-              sx={{ fontSize: 17 }}
-              variant="p"
-              color="text.primary"
-              component="div"
-            >
-              {`Ravindra Jadeja (CSK) 100*(55)`}
-            </Typography>
+              <Typography
+                variant="h5"
+                gutterBottom
+              >{`${player.name}`}</Typography>
+              <Typography
+                sx={{ fontSize: 14 }}
+                color="text.secondary"
+                gutterBottom
+              >
+                {`as ${player.specialization}`}
+              </Typography>
+            </Stack>
+            <Divider sx={{ mb: 1 }} />
+            <PlayerInfo rows={rows} />
           </Stack>
-          <Divider />
-          <Typography
-            sx={{ fontSize: 20, mt: 2 }}
-            variant="p"
-            component="div"
-            alignSelf={"center"}
-          >
-            RR won by 3 runs
-          </Typography>
         </Stack>
       </CardContent>
     </Card>
