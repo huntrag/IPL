@@ -19,6 +19,7 @@ const Main = styled("main", { shouldForwardProp: (prop) => prop !== "open" })(
       }),
       marginLeft: 0,
     }),
+    backgroundColor: "ghostwhite",
   })
 );
 

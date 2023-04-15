@@ -78,7 +78,7 @@ export default function Rightbar() {
                       <Avatar
                         alt="Example Alt"
                         src={row.img}
-                        sx={{ height: "1%", width: "12%", mr: 1 }}
+                        sx={{ height: "12%", width: "20%", mr: 1 }}
                       />
                       <Typography variant="p" fontSize={15}>
                         {row.name}
