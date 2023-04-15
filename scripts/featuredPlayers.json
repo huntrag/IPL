@@ -1,0 +1,92 @@
+[
+  {
+    "name": "Virat Kohli",
+    "played": 226,
+    "specialization": "Batsman",
+    "debut": 2008,
+    "sp1": 6788,
+    "sp2": 113,
+    "sp3": 36.69,
+    "sp4": 5
+  },
+  {
+    "name": "Mohammad Siraj",
+    "played": 68,
+    "specialization": "Bowler",
+    "debut": 2017,
+    "sp1": 64,
+    "sp2": "4/32",
+    "sp3": 8.7,
+    "sp4": 1
+  },
+  {
+    "name": "MS Dhoni",
+    "played": 68,
+    "specialization": "Wicketkeeper",
+    "debut": 2008,
+    "sp1": 5036,
+    "sp2": 84,
+    "sp3": 39.34,
+    "sp4": 138
+  },
+  {
+    "name": "Rinku Singh",
+    "played": 21,
+    "specialization": "Batsman",
+    "debut": 2017,
+    "sp1": 407,
+    "sp2": 58,
+    "sp3": 29.07,
+    "sp4": 0
+  },
+  {
+    "name": "Bhuvneshwar Kumar",
+    "played": 150,
+    "specialization": "Bowler",
+    "debut": 2011,
+    "sp1": 157,
+    "sp2": "5/19",
+    "sp3": 7.34,
+    "sp4": 2
+  },
+  {
+    "name": "Jos Buttler",
+    "played": 86,
+    "specialization": "Wicketkeeper",
+    "debut": 2016,
+    "sp1": 3035,
+    "sp2": 124,
+    "sp3": 40.47,
+    "sp4": 46
+  },
+  {
+    "name": "Rohit Sharma",
+    "played": 230,
+    "specialization": "Batsman",
+    "debut": 2008,
+    "sp1": 5966,
+    "sp2": "109*",
+    "sp3": 30.28,
+    "sp4": 1
+  },
+  {
+    "name": "Mark Wood",
+    "played": 4,
+    "specialization": "Bowler",
+    "debut": 2017,
+    "sp1": 9,
+    "sp2": "5/14",
+    "sp3": 9,
+    "sp4": 1
+  },
+  {
+    "name": "Shikhar Dhawan",
+    "played": 210,
+    "specialization": "Batsman",
+    "debut": 2008,
+    "sp1": 6477,
+    "sp2": "106*",
+    "sp3": 35.98,
+    "sp4": 2
+  }
+]

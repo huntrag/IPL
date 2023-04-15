@@ -3,7 +3,16 @@ import "./App.css";
 
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 
-import { Home, About, Player, Players, Matches, Points, Stats } from "./pages";
+import {
+  Home,
+  About,
+  Player,
+  Players,
+  Matches,
+  Points,
+  Stats,
+  UpcomingMatches,
+} from "./pages";
 import { Navbar, Sidebar, Main } from "./components";
 
 import { Box, Stack } from "@mui/material";
@@ -58,6 +67,10 @@ function App() {
         {
           path: "/stats",
           element: <Stats />,
+        },
+        {
+          path: "/upcoming-matches",
+          element: <UpcomingMatches />,
         },
       ],
     },

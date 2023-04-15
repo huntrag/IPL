@@ -4,14 +4,21 @@ import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
-import { Avatar, CssBaseline, Stack } from "@mui/material";
+import { Avatar, CssBaseline, Divider, Stack } from "@mui/material";
 
-export default function MatchCard(props) {
+// player pic: https://scores.iplt20.com/ipl/playerimages/Virat%20Kohli.png
+
+export default function FeaturedPlayerCard(props) {
   return (
     <Card key={props.match.no} sx={{ minWidth: 275 }}>
       <CssBaseline />
       <CardContent>
-        <Stack direction="row" justifyContent={"space-between"} spacing={10}>
+        <Stack
+          direction="row"
+          justifyContent={"space-between"}
+          spacing={10}
+          sx={{ mb: 2 }}
+        >
           <Typography sx={{ fontSize: 20 }} color="text.secondary" gutterBottom>
             {`${props.match.no}`}
           </Typography>
@@ -37,7 +44,7 @@ export default function MatchCard(props) {
             </Typography>
           </Stack>
           <Typography sx={{ fontSize: 20 }} variant="p" component="div">
-            Score
+            143/6 (20)
           </Typography>
         </Stack>
         <Stack
@@ -57,16 +64,43 @@ export default function MatchCard(props) {
             </Typography>
           </Stack>
           <Typography sx={{ fontSize: 20 }} variant="p" component="div">
-            Score
+            143/6 (20)
           </Typography>
         </Stack>
-        <Typography sx={{ fontSize: 20 }} variant="p" component="div">
-          Score
-        </Typography>
+        <Stack
+          direction="column"
+          justifyContent={"space-between"}
+          sx={{ mt: 2 }}
+        >
+          <Stack direction={"column"} sx={{ mb: 2 }}>
+            <Typography
+              sx={{ fontSize: 17 }}
+              variant="p"
+              color="text.secondary"
+              component="div"
+            >
+              Player of the Match
+            </Typography>
+            <Typography
+              sx={{ fontSize: 17 }}
+              variant="p"
+              color="text.primary"
+              component="div"
+            >
+              {`Ravindra Jadeja (CSK) 100*(55)`}
+            </Typography>
+          </Stack>
+          <Divider />
+          <Typography
+            sx={{ fontSize: 20, mt: 2 }}
+            variant="p"
+            component="div"
+            alignSelf={"center"}
+          >
+            RR won by 3 runs
+          </Typography>
+        </Stack>
       </CardContent>
-      <CardActions>
-        <Button size="small">Learn More</Button>
-      </CardActions>
     </Card>
   );
 }

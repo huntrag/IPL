@@ -12,7 +12,7 @@ const filterOptions = createFilterOptions({
 });
 
 export default function Filter() {
-  const [value, setValue] = useState("");
+  const [value, setValue] = useState({ season: "1", year: 2008 });
 
   useEffect(() => {}, [value]);
 

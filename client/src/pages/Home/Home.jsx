@@ -1,5 +1,5 @@
 import React from "react";
-import { FeaturedMatches, Rightbar } from "../../components";
+import { FeaturedMatches, FeaturedPlayers, Rightbar } from "../../components";
 import { Box, Divider, Stack, Typography } from "@mui/material";
 
 const Home = () => {
@@ -28,7 +28,7 @@ const Home = () => {
           <Box sx={{ m: 3 }}>
             <Typography variant="h4">Featured Players</Typography>
           </Box>
-          <FeaturedMatches />
+          <FeaturedPlayers />
         </Stack>
       </Stack>
 

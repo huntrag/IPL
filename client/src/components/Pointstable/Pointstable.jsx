@@ -68,7 +68,6 @@ export default function Pointstable() {
                 <StyledTableCell align="right">NRR</StyledTableCell>
                 <StyledTableCell align="right">P</StyledTableCell>
                 <StyledTableCell align="left">Last Results</StyledTableCell>
-                <StyledTableCell align="right">Next</StyledTableCell>
               </TableRow>
             </TableHead>
             <TableBody>
@@ -80,7 +79,7 @@ export default function Pointstable() {
                       <Avatar
                         alt="Example Alt"
                         src={row.img}
-                        sx={{ height: "1%", width: "2.5%", mr: 1 }}
+                        sx={{ height: "1%", width: "3%", mr: 1 }}
                       />
                       <Typography variant="p" fontSize={15}>
                         {row.name}
@@ -114,9 +113,6 @@ export default function Pointstable() {
                         <span className={`rf ${res} ih-pt-g`}>{res}</span>
                       ))}
                     </Stack>
-                  </StyledTableCell>
-                  <StyledTableCell component="th" scope="row" align="right">
-                    {row.next}
                   </StyledTableCell>
                 </StyledTableRow>
               ))}
