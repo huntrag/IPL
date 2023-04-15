@@ -6,17 +6,17 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import { Avatar, CssBaseline, Stack } from "@mui/material";
 
-export default function MatchCard(props) {
+export default function UpcomingMatchCard(props) {
   return (
     <Card key={props.match.no} sx={{ minWidth: 275 }}>
       <CssBaseline />
       <CardContent>
-        <Stack direction="row" justifyContent={"space-between"} spacing={10}>
-          <Typography sx={{ fontSize: 20 }} color="text.secondary" gutterBottom>
+        <Stack direction="row" justifyContent={"space-between"} spacing={9}>
+          <Typography sx={{ fontSize: 18 }} color="text.secondary" gutterBottom>
             {`${props.match.no}`}
           </Typography>
           <Typography sx={{ fontSize: 17 }} color="text.secondary" gutterBottom>
-            {`${props.match.date} : ${props.match.time}`}
+            {`${props.match.date}`}
           </Typography>
         </Stack>
 
@@ -25,48 +25,43 @@ export default function MatchCard(props) {
           justifyContent={"space-between"}
           alignItems={"center"}
           spacing={10}
+          sx={{ m: 1.5 }}
         >
           <Stack direction="row" alignItems={"center"}>
             <Avatar
               alt="Example Alt"
-              sx={{ width: "50", mr: 1.5 }}
+              sx={{ width: "40", mr: 1.5 }}
               src={`https://scores.iplt20.com/ipl/teamlogos/${props.match.team1Short}.png?v=2`}
             />
-            <Typography sx={{ fontSize: 20 }} variant="p" component="div">
+            <Typography sx={{ fontSize: 18 }} variant="p" component="div">
               {`${props.match.team1Short}`}
             </Typography>
           </Stack>
-          <Typography sx={{ fontSize: 20 }} variant="p" component="div">
-            Score
-          </Typography>
-        </Stack>
-        <Stack
-          direction="row"
-          justifyContent={"space-between"}
-          alignItems={"center"}
-          spacing={10}
-        >
+          <Typography>vs</Typography>
           <Stack direction="row" alignItems={"center"}>
             <Avatar
               alt="Example Alt"
               sx={{ width: "50", mr: 1.5 }}
               src={`https://scores.iplt20.com/ipl/teamlogos/${props.match.team2Short}.png?v=2`}
             />
-            <Typography sx={{ fontSize: 20 }} variant="p" component="div">
+            <Typography sx={{ fontSize: 18 }} variant="p" component="div">
               {`${props.match.team2Short}`}
             </Typography>
           </Stack>
-          <Typography sx={{ fontSize: 20 }} variant="p" component="div">
-            Score
-          </Typography>
         </Stack>
-        <Typography sx={{ fontSize: 20 }} variant="p" component="div">
-          Score
-        </Typography>
+        <Typography
+          sx={{ fontSize: 13 }}
+          color="text.secondary"
+          gutterBottom
+          maxWidth={275}
+          overflow={""}
+        >{`Venue: ${props.match.venue}`}</Typography>
+        <Typography
+          sx={{ fontSize: 14, mt: 1 }}
+          color="text.primary"
+          maxWidth={275}
+        >{`Starts at ${props.match.time}`}</Typography>
       </CardContent>
-      <CardActions>
-        <Button size="small">Learn More</Button>
-      </CardActions>
     </Card>
   );
 }

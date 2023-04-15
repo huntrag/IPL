@@ -1,0 +1,72 @@
+[
+  {
+    "name": "Virat Kohli",
+    "played": 226,
+    "specialization": "Batsman",
+    "debut": 2008,
+    "sp": [6788, 113, 36.69, 5]
+  },
+  {
+    "name": "MS Dhoni",
+    "played": 68,
+    "specialization": "Wicketkeeper",
+    "debut": 2008,
+    "sp": [5036, 84, 39.34, 138]
+  },
+  {
+    "name": "Rinku Singh",
+    "played": 21,
+    "specialization": "Batsman",
+    "debut": 2017,
+    "sp": [407, 58, 29.07, 0]
+  },
+  {
+    "name": "Bhuvneshwar Kumar",
+    "played": 150,
+    "specialization": "Bowler",
+    "debut": 2011,
+    "sp": [157, "5/19", 7.34, 2]
+  },
+  {
+    "name": "Jos Buttler",
+    "played": 86,
+    "specialization": "Wicketkeeper",
+    "debut": 2016,
+    "sp": [3035, 124, 40.47, 46]
+  },
+  {
+    "name": "Anrich Nortje",
+    "played": 33,
+    "specialization": "Bowler",
+    "debut": 2020,
+    "sp": [45, "3/33", 8.23, 0]
+  },
+  {
+    "name": "Rohit Sharma",
+    "played": 230,
+    "specialization": "Batsman",
+    "debut": 2008,
+    "sp": [5966, "109*", 30.28, 1]
+  },
+  {
+    "name": "Mark Wood",
+    "played": 4,
+    "specialization": "Bowler",
+    "debut": 2017,
+    "sp": [9, "5/14", 9.0, 1]
+  },
+  {
+    "name": "Shikhar Dhawan",
+    "played": 210,
+    "specialization": "Batsman",
+    "debut": 2008,
+    "sp": [6477, "106*", 35.98, 2]
+  },
+  {
+    "name": "Hardik Pandya",
+    "played": 110,
+    "specialization": "All Rounder",
+    "debut": 2015,
+    "sp": [1984, 146.31, 50, 8.72]
+  }
+]

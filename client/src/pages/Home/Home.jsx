@@ -1,6 +1,6 @@
 import React from "react";
-import { FeaturedMatches, Rightbar } from "../../components";
-import { Box, Divider, Stack, Typography } from "@mui/material";
+import { FeaturedMatches, FeaturedPlayers, Rightbar } from "../../components";
+import { Box, Divider, Stack, Typography, Paper } from "@mui/material";
 
 const Home = () => {
   return (
@@ -15,21 +15,25 @@ const Home = () => {
         justifyContent={"center"}
         direction="column"
       >
-        <Stack direction={"column"} sx={{ m: 3 }}>
-          <Box sx={{ m: 3 }}>
-            <Typography variant="h4" gutterBottom>
-              Featured Matches
-            </Typography>
-          </Box>
-          <FeaturedMatches />
-        </Stack>
-        <Divider sx={{ width: "80%", height: 2 }} />
-        <Stack direction={"column"} columnGap>
-          <Box sx={{ m: 3 }}>
-            <Typography variant="h4">Featured Players</Typography>
-          </Box>
-          <FeaturedMatches />
-        </Stack>
+        <Paper>
+          <Stack direction={"column"} sx={{ m: 3 }}>
+            <Box sx={{ m: 3 }}>
+              <Typography variant="h4" gutterBottom>
+                Featured Matches
+              </Typography>
+            </Box>
+            <FeaturedMatches />
+          </Stack>
+        </Paper>
+        <Divider sx={{ width: "80%", height: 2, m: 4 }} />
+        <Paper>
+          <Stack direction={"column"} sx={{ m: 3 }}>
+            <Box sx={{ m: 3 }}>
+              <Typography variant="h4">Featured Players</Typography>
+            </Box>
+            <FeaturedPlayers />
+          </Stack>
+        </Paper>
       </Stack>
 
       <Rightbar />

@@ -57,6 +57,11 @@ export default function Sidebar() {
       url: "/",
     },
     {
+      name: "Upcoming Matches",
+      icon: <EmojiEvents />,
+      url: "/upcoming-matches",
+    },
+    {
       name: "Matches",
       icon: <EmojiEvents />,
       url: "/matches",

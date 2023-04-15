@@ -1,23 +1,23 @@
 import React from "react";
 import { Grid, Stack } from "@mui/material";
-import MatchCard from "../../components/MatchCard/MatchCard";
 
 import data from "../../../../scripts/schedule.json";
-import FeaturedMatchCard from "../../components/FeaturedMatchCard/FeaturedMatchCard";
+import { UpcomingMatchCard } from "../../components";
 
-const Matches = () => {
+const UpcomingMatches = () => {
   return (
-    <Stack>
+    <Stack alignItems={"center"} justifyContent={"center"}>
       <Grid
         container
         rowSpacing={3}
-        alignItems="center"
-        justifyContent={"flex-start"}
+        alignSelf={"center"}
+        alignItems={"center"}
+        justifyContent={"center"}
       >
         {data.map((match, index) => {
           return (
             <Grid item sx={{ m: 2 }}>
-              <FeaturedMatchCard match={match} />
+              <UpcomingMatchCard match={match} />
             </Grid>
           );
         })}
@@ -26,4 +26,4 @@ const Matches = () => {
   );
 };
 
-export default Matches;
+export default UpcomingMatches;
