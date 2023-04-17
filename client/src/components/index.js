@@ -11,3 +11,4 @@ export { default as UpcomingMatchCard } from "./UpcomingMatchCard/UpcomingMatchC
 export { default as Scorecard } from "./Scorecard/Scorecard";
 export { default as Summary } from "./Summary/Summary";
 export { default as Comments } from "./Comments/Comments";
+export { default as Loader } from "./Loader/Loader";
