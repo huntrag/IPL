@@ -8,3 +8,7 @@ export { default as Main } from "./Main/Main";
 export { default as Pointstable } from "./Pointstable/Pointstable";
 export { default as PlayerInfo } from "./PlayerInfo/PlayerInfo";
 export { default as UpcomingMatchCard } from "./UpcomingMatchCard/UpcomingMatchCard";
+export { default as Scorecard } from "./Scorecard/Scorecard";
+export { default as Summary } from "./Summary/Summary";
+export { default as Comments } from "./Comments/Comments";
+export { default as Loader } from "./Loader/Loader";

@@ -12,10 +12,11 @@ import {
   Points,
   Stats,
   UpcomingMatches,
+  Match,
 } from "./pages";
 import { Navbar, Sidebar, Main } from "./components";
 
-import { Box, Stack } from "@mui/material";
+import { Box, Stack, ThemeProvider } from "@mui/material";
 import { useSelector } from "react-redux";
 // import videoBg from "./assets/videoBg.mp4";
 
@@ -74,11 +75,19 @@ function App() {
           path: "/upcoming-matches",
           element: <UpcomingMatches />,
         },
+        {
+          path: "/match/:id",
+          element: <Match />,
+        },
       ],
     },
   ]);
 
-  return <RouterProvider router={router} />;
+  return (
+    // <ThemeProvider>
+    <RouterProvider router={router} />
+    // </ThemeProvider>
+  );
 }
 
 export default App;

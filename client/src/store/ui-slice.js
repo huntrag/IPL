@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const uiSlice = createSlice({
   name: "ui",
-  initialState: { loginIsVis: false, drawerIsVis: false },
+  initialState: { loginIsVis: false, drawerIsVis: false, isLoading: false },
   reducers: {
     showLogin(state) {
       state.loginIsVis = true;
@@ -15,6 +15,12 @@ const uiSlice = createSlice({
     },
     hideDrawer(state) {
       state.drawerIsVis = false;
+    },
+    showLoading(state) {
+      state.isLoading = true;
+    },
+    hideLoading(state) {
+      state.isLoading = false;
     },
   },
 });

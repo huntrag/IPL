@@ -56,23 +56,47 @@ export default function Rightbar() {
           <Table sx={{ minWidth: 600 }} aria-label="customized table">
             <TableHead>
               <TableRow>
-                <StyledTableCell>Pos</StyledTableCell>
-                <StyledTableCell>Team</StyledTableCell>
-                <StyledTableCell align="right">M</StyledTableCell>
-                <StyledTableCell align="right">W</StyledTableCell>
-                <StyledTableCell align="right">L</StyledTableCell>
-                <StyledTableCell align="right">T</StyledTableCell>
-                <StyledTableCell align="right">NR</StyledTableCell>
-                <StyledTableCell align="right">NRR</StyledTableCell>
-                <StyledTableCell align="right">P</StyledTableCell>
-                <StyledTableCell align="left">Last Results</StyledTableCell>
-                <StyledTableCell align="right">Next</StyledTableCell>
+                <StyledTableCell>
+                  <Typography>Pos</Typography>
+                </StyledTableCell>
+                <StyledTableCell>
+                  <Typography>Team</Typography>
+                </StyledTableCell>
+                <StyledTableCell align="right">
+                  <Typography>M</Typography>
+                </StyledTableCell>
+                <StyledTableCell align="right">
+                  <Typography>W</Typography>
+                </StyledTableCell>
+                <StyledTableCell align="right">
+                  <Typography>L</Typography>
+                </StyledTableCell>
+                <StyledTableCell align="right">
+                  <Typography>T</Typography>
+                </StyledTableCell>
+                <StyledTableCell align="right">
+                  <Typography>NR</Typography>
+                </StyledTableCell>
+                <StyledTableCell align="right">
+                  <Typography>NRR</Typography>
+                </StyledTableCell>
+                <StyledTableCell align="right">
+                  <Typography>P</Typography>
+                </StyledTableCell>
+                <StyledTableCell align="center">
+                  <Typography>Last Results</Typography>
+                </StyledTableCell>
+                <StyledTableCell align="right">
+                  <Typography>Next</Typography>
+                </StyledTableCell>
               </TableRow>
             </TableHead>
             <TableBody>
               {data.map((row) => (
                 <StyledTableRow key={row.pos}>
-                  <StyledTableCell>{row.pos}</StyledTableCell>
+                  <StyledTableCell>
+                    <Typography>{row.pos}</Typography>
+                  </StyledTableCell>
                   <StyledTableCell>
                     <Stack direction="row" alignItems={"center"}>
                       <Avatar
@@ -86,25 +110,25 @@ export default function Rightbar() {
                     </Stack>
                   </StyledTableCell>
                   <StyledTableCell component="th" scope="row" align="right">
-                    {row.matches}
+                    <Typography>{row.matches}</Typography>
                   </StyledTableCell>
                   <StyledTableCell component="th" scope="row" align="right">
-                    {row.won}
+                    <Typography>{row.won}</Typography>
                   </StyledTableCell>
                   <StyledTableCell component="th" scope="row" align="right">
-                    {row.lost}
+                    <Typography>{row.lost}</Typography>
                   </StyledTableCell>
                   <StyledTableCell component="th" scope="row" align="right">
-                    {row.tie}
+                    <Typography>{row.tie}</Typography>
                   </StyledTableCell>
                   <StyledTableCell component="th" scope="row" align="right">
-                    {row["n/r"]}
+                    <Typography>{row["n/r"]}</Typography>
                   </StyledTableCell>
                   <StyledTableCell component="th" scope="row" align="right">
-                    {row.nrr}
+                    <Typography>{row.nrr}</Typography>
                   </StyledTableCell>
                   <StyledTableCell component="th" scope="row" align="right">
-                    {row.points}
+                    <Typography>{row.points}</Typography>
                   </StyledTableCell>
                   <StyledTableCell>
                     <Stack direction={"row"}>
@@ -114,7 +138,7 @@ export default function Rightbar() {
                     </Stack>
                   </StyledTableCell>
                   <StyledTableCell component="th" scope="row" align="right">
-                    {row.next}
+                    <Typography>{row.next}</Typography>
                   </StyledTableCell>
                 </StyledTableRow>
               ))}
