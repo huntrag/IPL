@@ -16,7 +16,7 @@ import {
 } from "./pages";
 import { Navbar, Sidebar, Main } from "./components";
 
-import { Box, Stack } from "@mui/material";
+import { Box, Stack, ThemeProvider } from "@mui/material";
 import { useSelector } from "react-redux";
 // import videoBg from "./assets/videoBg.mp4";
 
@@ -83,7 +83,11 @@ function App() {
     },
   ]);
 
-  return <RouterProvider router={router} />;
+  return (
+    // <ThemeProvider>
+    <RouterProvider router={router} />
+    // </ThemeProvider>
+  );
 }
 
 export default App;
