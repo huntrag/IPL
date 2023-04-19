@@ -38,12 +38,12 @@
             "balls": 78
           },
           {
-            "name": "Devon Conway",
+            "name": "Billu Barber",
             "runs": 226,
             "balls": 78
           },
           {
-            "name": "Devon Conway",
+            "name": "Prakash",
             "runs": 226,
             "balls": 78
           }
@@ -56,13 +56,13 @@
             "overs": 2.1
           },
           {
-            "name": "Wanindu Hasaranga",
+            "name": "Navdeep Saini",
             "wickets": 1,
             "runs": 21,
             "overs": 2.1
           },
           {
-            "name": "Wanindu Hasaranga",
+            "name": "Deepak Saini",
             "wickets": 1,
             "runs": 21,
             "overs": 2.1
@@ -82,12 +82,12 @@
             "balls": 78
           },
           {
-            "name": "Devon Conway",
+            "name": "Raju",
             "runs": 226,
             "balls": 78
           },
           {
-            "name": "Devon Conway",
+            "name": "Pinky",
             "runs": 226,
             "balls": 78
           }
@@ -100,13 +100,13 @@
             "overs": 2.1
           },
           {
-            "name": "Wanindu Hasaranga",
+            "name": "Kamlesh",
             "wickets": 1,
             "runs": 21,
             "overs": 2.1
           },
           {
-            "name": "Wanindu Hasaranga",
+            "name": "Rocky",
             "wickets": 1,
             "runs": 21,
             "overs": 2.1
@@ -139,7 +139,7 @@
               "dismissal": "lbw Harshal Patel"
             },
             {
-              "name": "Ambati Rayudu",
+              "name": "MS Dhoni",
               "runs": 39,
               "balls": 63,
               "fours": 10,
@@ -183,7 +183,7 @@
               "overs": 2.2
             },
             {
-              "name": "Ruturaj Gaikwad",
+              "name": "MS Dhoni",
               "runs": 16,
               "wickets": 1,
               "overs": 2.2
@@ -212,7 +212,7 @@
             "economy": 7.95
           },
           {
-            "name": "Mohammad Siraj",
+            "name": "Shoiab Akhtar",
             "overs": 4,
             "maiden": 0,
             "runs": 30,
@@ -220,7 +220,7 @@
             "economy": 7.95
           },
           {
-            "name": "Mohammad Siraj",
+            "name": "Sunil",
             "overs": 4,
             "maiden": 0,
             "runs": 30,
@@ -228,7 +228,7 @@
             "economy": 7.95
           },
           {
-            "name": "Mohammad Siraj",
+            "name": "Dinesh",
             "overs": 4,
             "maiden": 0,
             "runs": 30,
@@ -236,7 +236,7 @@
             "economy": 7.95
           },
           {
-            "name": "Mohammad Siraj",
+            "name": "Kapil Dev",
             "overs": 4,
             "maiden": 0,
             "runs": 30,
@@ -246,7 +246,8 @@
         ]
       },
       "inn2": {
-        "team": "RCB",
+        "team": "Royal Challengers Bangalore",
+        "short": "RCB",
         "batting": {
           "score": [
             {
@@ -264,7 +265,7 @@
               "balls": 6,
               "fours": 1,
               "sixes": 4,
-              "sr": 100.0,
+              "sr": 100.1,
               "dismissal": "lbw Harshal Patel"
             },
             {
@@ -277,7 +278,7 @@
               "dismissal": "b Harshal Patel"
             },
             {
-              "name": "Ambati Rayudu",
+              "name": "Priti",
               "runs": 39,
               "balls": 63,
               "fours": 10,
@@ -312,7 +313,7 @@
               "overs": 2.2
             },
             {
-              "name": "Ruturaj Gaikwad",
+              "name": "Kishan",
               "runs": 16,
               "wickets": 1,
               "overs": 2.2
@@ -341,7 +342,7 @@
             "economy": 7.95
           },
           {
-            "name": "Mohammad Siraj",
+            "name": "Shoiab Akhtar",
             "overs": 4,
             "maiden": 0,
             "runs": 30,
@@ -349,7 +350,7 @@
             "economy": 7.95
           },
           {
-            "name": "Mohammad Siraj",
+            "name": "Sunil",
             "overs": 4,
             "maiden": 0,
             "runs": 30,
@@ -357,7 +358,7 @@
             "economy": 7.95
           },
           {
-            "name": "Mohammad Siraj",
+            "name": "Dinesh",
             "overs": 4,
             "maiden": 0,
             "runs": 30,
@@ -365,7 +366,7 @@
             "economy": 7.95
           },
           {
-            "name": "Mohammad Siraj",
+            "name": "Kapil Dev",
             "overs": 4,
             "maiden": 0,
             "runs": 30,
