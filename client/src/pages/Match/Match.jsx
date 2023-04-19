@@ -1,14 +1,18 @@
 import * as React from "react";
 import PropTypes from "prop-types";
-import Tabs from "@mui/material/Tabs";
-import Tab from "@mui/material/Tab";
-import Typography from "@mui/material/Typography";
-import Box from "@mui/material/Box";
 
-import Points from "../Points/Points";
-import { CssBaseline, Stack } from "@mui/material";
+import {
+  Tabs,
+  Tab,
+  Typography,
+  CssBaseline,
+  Stack,
+  Paper,
+  Box,
+} from "@mui/material";
 import { Comments, Scorecard, Summary } from "../../components";
-import FeaturedMatchCard from "../../components/FeaturedMatchCard/FeaturedMatchCard";
+
+import data from "../../../../scripts/match.json";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -51,9 +55,8 @@ export default function Match() {
   };
 
   return (
-    <Stack>
-      {/* <FeaturedMatchCard /> */}
-      <Box sx={{ width: "100%" }}>
+    <Stack alignItems={"center"}>
+      <Paper sx={{ width: "50%", pt: 1 }}>
         <CssBaseline />
         <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
           <Stack direction="row" alignItems={"center"} justifyContent="center">
@@ -61,23 +64,26 @@ export default function Match() {
               value={value}
               onChange={handleChange}
               aria-label="cricket scoreboard"
+              sx={{ width: "80%" }}
             >
-              <Tab label="Summary" {...a11yProps(0)} />
-              <Tab label="Scorecard" {...a11yProps(1)} />
-              <Tab label="Comments" {...a11yProps(2)} />
+              <Tab label="Summary" {...a11yProps(0)} sx={{ width: "33%" }} />
+              <Tab label="Scorecard" {...a11yProps(1)} sx={{ width: "33%" }} />
+              <Tab label="Comments" {...a11yProps(2)} sx={{ width: "33%" }} />
             </Tabs>
           </Stack>
         </Box>
-        <TabPanel value={value} index={0}>
-          <Summary />
-        </TabPanel>
-        <TabPanel value={value} index={1}>
-          <Scorecard />
-        </TabPanel>
-        <TabPanel value={value} index={2}>
-          <Comments />
-        </TabPanel>
-      </Box>
+        <Stack>
+          <TabPanel value={value} index={0}>
+            <Summary data={data[0].summary} />
+          </TabPanel>
+          <TabPanel value={value} index={1}>
+            <Scorecard data={data[0].scorecard} />
+          </TabPanel>
+          <TabPanel value={value} index={2}>
+            <Comments />
+          </TabPanel>
+        </Stack>
+      </Paper>
     </Stack>
   );
 }

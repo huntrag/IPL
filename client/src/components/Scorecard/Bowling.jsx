@@ -20,9 +20,13 @@ const rows = [
   createData("Eclair", 262, 16.0, 24, 6.0),
 ];
 
-export default function Bowling() {
+export default function Bowling(props) {
   return (
-    <TableContainer component={Paper} sx={{ minWidth: 650, maxWidth: 800 }}>
+    <TableContainer
+      component={Paper}
+      sx={{ minWidth: 650, maxWidth: 800, p: 2 }}
+      elevation={2}
+    >
       <Stack alignItems={"center"} justifyContent="center">
         <Table sx={{ minWidth: 650, maxWidth: 800 }} aria-label="caption table">
           <TableHead>
@@ -36,16 +40,16 @@ export default function Bowling() {
             </TableRow>
           </TableHead>
           <TableBody>
-            {rows.map((row) => (
+            {props.data.map((row) => (
               <TableRow key={row.name}>
                 <TableCell component="th" scope="row">
-                  Bhadwa
+                  {row.name}
                 </TableCell>
-                <TableCell align="right">123</TableCell>
-                <TableCell align="right">121</TableCell>
-                <TableCell align="right">14</TableCell>
-                <TableCell align="right">12</TableCell>
-                <TableCell align="right">120</TableCell>
+                <TableCell align="right">{row.overs}</TableCell>
+                <TableCell align="right">{row.maiden}</TableCell>
+                <TableCell align="right">{row.runs}</TableCell>
+                <TableCell align="right">{row.wickets}</TableCell>
+                <TableCell align="right">{row.economy}</TableCell>
               </TableRow>
             ))}
           </TableBody>

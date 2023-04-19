@@ -8,58 +8,9 @@ import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 import { Box, Typography, Stack } from "@mui/material";
 
-function createData(name, calories, fat, carbs, protein) {
-  return { name, calories, fat, carbs, protein };
-}
-
 // img: https://scores.iplt20.com/ipl/teamlogos/LSG.png
 
-const rows = [
-  createData("Frozen yoghurt", 159, 6.0, 24, 4.0),
-  createData("Ice cream sandwich", 237, 9.0, 37, 4.3),
-  createData("Eclair", 262, 16.0, 24, 6.0),
-];
-
-const fallOfWIckets = [
-  {
-    runs: "53",
-    wickets: 1,
-    over: 4,
-    name: "Raghav Gade",
-  },
-  {
-    runs: "53",
-    wickets: 1,
-    over: 4,
-    name: "Raghav Gade",
-  },
-  {
-    runs: "53",
-    wickets: 1,
-    over: 4,
-    name: "Raghav Gade",
-  },
-  {
-    runs: "53",
-    wickets: 1,
-    over: 4,
-    name: "Raghav Gade",
-  },
-  {
-    runs: "53",
-    wickets: 1,
-    over: 4,
-    name: "Raghav Gade",
-  },
-  {
-    runs: "53",
-    wickets: 1,
-    over: 4,
-    name: "Raghav Gade",
-  },
-];
-
-export default function Batting() {
+export default function Batting(props) {
   const bull = (
     <Box
       component="span"
@@ -72,8 +23,8 @@ export default function Batting() {
   return (
     <TableContainer
       component={Paper}
-      sx={{ minWidth: 650, maxWidth: 800 }}
-      elevation={3}
+      sx={{ minWidth: 650, maxWidth: 800, p: 2 }}
+      elevation={2}
     >
       <Stack alignItems={"center"} justifyContent="center">
         <Table sx={{ minWidth: 650, maxWidth: 800 }} aria-label="caption table">
@@ -81,7 +32,7 @@ export default function Batting() {
             <Typography color={"black"} gutterBottom>
               Fall of wickets
             </Typography>
-            {fallOfWIckets.map((unit, index) => (
+            {props.data.fallofwickets.map((unit, index) => (
               <React.Fragment>
                 <Typography component={"span"} color={"black"}>
                   {bull}
@@ -89,7 +40,7 @@ export default function Batting() {
                 </Typography>
                 <Typography
                   component={"span"}
-                >{`(${unit.name}, ${unit.over} ov) `}</Typography>
+                >{`(${unit.name}, ${unit.overs} ov) `}</Typography>
               </React.Fragment>
             ))}
           </caption>
@@ -104,23 +55,23 @@ export default function Batting() {
             </TableRow>
           </TableHead>
           <TableBody>
-            {rows.map((row) => (
+            {props.data.score.map((row) => (
               <TableRow key={row.name}>
                 <TableCell component="th" scope="row">
-                  <Typography>Rohit Sharma</Typography>
+                  <Typography>{row.name}</Typography>
                   <Typography
                     fontWeight={10}
                     fontSize={14}
                     color="text.secondary"
                   >
-                    c Ruturaj Gaikwad b Bhuvaneshwar Kumar
+                    {row.dismissal}
                   </Typography>
                 </TableCell>
-                <TableCell align="right">123</TableCell>
-                <TableCell align="right">121</TableCell>
-                <TableCell align="right">14</TableCell>
-                <TableCell align="right">12</TableCell>
-                <TableCell align="right">120.12</TableCell>
+                <TableCell align="right">{row.runs}</TableCell>
+                <TableCell align="right">{row.balls}</TableCell>
+                <TableCell align="right">{row.fours}</TableCell>
+                <TableCell align="right">{row.sixes}</TableCell>
+                <TableCell align="right">{`${row.sr}`}</TableCell>
               </TableRow>
             ))}
           </TableBody>

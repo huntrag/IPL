@@ -4,11 +4,11 @@ import Bowling from "./Bowling";
 
 import { Stack } from "@mui/material";
 
-const Innings = () => {
+const Innings = (props) => {
   return (
     <Stack direction="column" alignItems={"center"} spacing={2}>
-      <Batting />
-      <Bowling />
+      <Batting data={props.data.batting} />
+      <Bowling data={props.data.bowling} />
     </Stack>
   );
 };
