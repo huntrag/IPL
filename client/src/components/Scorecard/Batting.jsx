@@ -46,12 +46,24 @@ export default function Batting(props) {
           </caption>
           <TableHead>
             <TableRow>
-              <TableCell>Batting</TableCell>
-              <TableCell align="right">R</TableCell>
-              <TableCell align="right">B</TableCell>
-              <TableCell align="right">4s</TableCell>
-              <TableCell align="right">6s</TableCell>
-              <TableCell align="right">S/R</TableCell>
+              <TableCell>
+                <Typography>Batting</Typography>
+              </TableCell>
+              <TableCell align="right">
+                <Typography>R</Typography>
+              </TableCell>
+              <TableCell align="right">
+                <Typography>B</Typography>
+              </TableCell>
+              <TableCell align="right">
+                <Typography>4s</Typography>
+              </TableCell>
+              <TableCell align="right">
+                <Typography>6s</Typography>
+              </TableCell>
+              <TableCell align="right">
+                <Typography>S/R</Typography>
+              </TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
@@ -67,11 +79,21 @@ export default function Batting(props) {
                     {row.dismissal}
                   </Typography>
                 </TableCell>
-                <TableCell align="right">{row.runs}</TableCell>
-                <TableCell align="right">{row.balls}</TableCell>
-                <TableCell align="right">{row.fours}</TableCell>
-                <TableCell align="right">{row.sixes}</TableCell>
-                <TableCell align="right">{`${row.sr}`}</TableCell>
+                <TableCell align="right">
+                  <Typography>{row.runs}</Typography>
+                </TableCell>
+                <TableCell align="right">
+                  <Typography>{row.balls}</Typography>
+                </TableCell>
+                <TableCell align="right">
+                  <Typography>{row.fours}</Typography>
+                </TableCell>
+                <TableCell align="right">
+                  <Typography>{row.sixes}</Typography>
+                </TableCell>
+                <TableCell align="right">
+                  <Typography>{`${row.sr}`}</Typography>
+                </TableCell>
               </TableRow>
             ))}
           </TableBody>

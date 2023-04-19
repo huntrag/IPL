@@ -31,25 +31,47 @@ export default function Bowling(props) {
         <Table sx={{ minWidth: 650, maxWidth: 800 }} aria-label="caption table">
           <TableHead>
             <TableRow>
-              <TableCell>Bowling</TableCell>
-              <TableCell align="right">O</TableCell>
-              <TableCell align="right">M</TableCell>
-              <TableCell align="right">R</TableCell>
-              <TableCell align="right">W</TableCell>
-              <TableCell align="right">Econ</TableCell>
+              <TableCell>
+                <Typography fontWeight={"500"}>Bowling</Typography>
+              </TableCell>
+              <TableCell align="right">
+                <Typography fontWeight={"500"}>O</Typography>
+              </TableCell>
+              <TableCell align="right">
+                <Typography fontWeight={"500"}>M</Typography>
+              </TableCell>
+              <TableCell align="right">
+                <Typography fontWeight={"500"}>R</Typography>
+              </TableCell>
+              <TableCell align="right">
+                <Typography fontWeight={"500"}>W</Typography>
+              </TableCell>
+              <TableCell align="right">
+                <Typography fontWeight={"500"}>Econ</Typography>
+              </TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
             {props.data.map((row) => (
               <TableRow key={row.name}>
                 <TableCell component="th" scope="row">
-                  {row.name}
+                  <Typography>{row.name}</Typography>
                 </TableCell>
-                <TableCell align="right">{row.overs}</TableCell>
-                <TableCell align="right">{row.maiden}</TableCell>
-                <TableCell align="right">{row.runs}</TableCell>
-                <TableCell align="right">{row.wickets}</TableCell>
-                <TableCell align="right">{row.economy}</TableCell>
+                <TableCell align="right">
+                  <Typography>{row.overs}</Typography>
+                </TableCell>
+                <TableCell align="right">
+                  <Typography>{row.maiden}</Typography>
+                </TableCell>
+                <TableCell align="right">
+                  <Typography>{row.runs}</Typography>
+                </TableCell>
+                <TableCell align="right">
+                  <Typography>{row.wickets}</Typography>
+                </TableCell>
+                <TableCell align="right">
+                  <Typography>{row.economy}</Typography>
+                </TableCell>
               </TableRow>
             ))}
           </TableBody>
