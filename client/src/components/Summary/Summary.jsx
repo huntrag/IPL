@@ -1,12 +1,7 @@
 import React from "react";
-import { Loader } from "..";
 
 const Summary = () => {
-  return (
-    <div>
-      <Loader />
-    </div>
-  );
+  return <div></div>;
 };
 
 export default Summary;

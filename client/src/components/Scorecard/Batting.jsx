@@ -70,7 +70,11 @@ export default function Batting() {
   );
 
   return (
-    <TableContainer component={Paper} sx={{ minWidth: 650, maxWidth: 800 }}>
+    <TableContainer
+      component={Paper}
+      sx={{ minWidth: 650, maxWidth: 800 }}
+      elevation={3}
+    >
       <Stack alignItems={"center"} justifyContent="center">
         <Table sx={{ minWidth: 650, maxWidth: 800 }} aria-label="caption table">
           <caption>
@@ -103,13 +107,20 @@ export default function Batting() {
             {rows.map((row) => (
               <TableRow key={row.name}>
                 <TableCell component="th" scope="row">
-                  Bhadwa
+                  <Typography>Rohit Sharma</Typography>
+                  <Typography
+                    fontWeight={10}
+                    fontSize={14}
+                    color="text.secondary"
+                  >
+                    c Ruturaj Gaikwad b Bhuvaneshwar Kumar
+                  </Typography>
                 </TableCell>
                 <TableCell align="right">123</TableCell>
                 <TableCell align="right">121</TableCell>
                 <TableCell align="right">14</TableCell>
                 <TableCell align="right">12</TableCell>
-                <TableCell align="right">120</TableCell>
+                <TableCell align="right">120.12</TableCell>
               </TableRow>
             ))}
           </TableBody>

@@ -8,6 +8,7 @@ import Box from "@mui/material/Box";
 import Points from "../Points/Points";
 import { CssBaseline, Stack } from "@mui/material";
 import { Comments, Scorecard, Summary } from "../../components";
+import FeaturedMatchCard from "../../components/FeaturedMatchCard/FeaturedMatchCard";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -50,30 +51,33 @@ export default function Match() {
   };
 
   return (
-    <Box sx={{ width: "100%" }}>
-      <CssBaseline />
-      <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
-        <Stack direction="row" alignItems={"center"} justifyContent="center">
-          <Tabs
-            value={value}
-            onChange={handleChange}
-            aria-label="cricket scoreboard"
-          >
-            <Tab label="Summary" {...a11yProps(0)} />
-            <Tab label="Scorecard" {...a11yProps(1)} />
-            <Tab label="Comments" {...a11yProps(2)} />
-          </Tabs>
-        </Stack>
+    <Stack>
+      {/* <FeaturedMatchCard /> */}
+      <Box sx={{ width: "100%" }}>
+        <CssBaseline />
+        <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
+          <Stack direction="row" alignItems={"center"} justifyContent="center">
+            <Tabs
+              value={value}
+              onChange={handleChange}
+              aria-label="cricket scoreboard"
+            >
+              <Tab label="Summary" {...a11yProps(0)} />
+              <Tab label="Scorecard" {...a11yProps(1)} />
+              <Tab label="Comments" {...a11yProps(2)} />
+            </Tabs>
+          </Stack>
+        </Box>
+        <TabPanel value={value} index={0}>
+          <Summary />
+        </TabPanel>
+        <TabPanel value={value} index={1}>
+          <Scorecard />
+        </TabPanel>
+        <TabPanel value={value} index={2}>
+          <Comments />
+        </TabPanel>
       </Box>
-      <TabPanel value={value} index={0}>
-        <Summary />
-      </TabPanel>
-      <TabPanel value={value} index={1}>
-        <Scorecard />
-      </TabPanel>
-      <TabPanel value={value} index={2}>
-        <Comments />
-      </TabPanel>
-    </Box>
+    </Stack>
   );
 }

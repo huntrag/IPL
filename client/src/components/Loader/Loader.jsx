@@ -1,18 +1,12 @@
 import * as React from "react";
-import { Stack, Button, Modal } from "@mui/material";
+import { Stack, Modal } from "@mui/material";
 import { ThreeCircles } from "react-loader-spinner";
 import { useSelector, useDispatch } from "react-redux";
 import { uiActions } from "../../store/ui-slice";
 
-import { Box } from "@mui/material";
-
 export default function Loader() {
   const dispatch = useDispatch();
   const open = useSelector((state) => state.ui.isLoading);
-  const handleOpen = () => {
-    dispatch(uiActions.showLoading());
-  };
-
   const handleClose = () => {
     dispatch(uiActions.hideLoading());
   };

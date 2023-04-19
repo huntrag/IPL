@@ -5,7 +5,6 @@ import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import { CssBaseline, Stack } from "@mui/material";
-import { Comments, Summary } from "../../components";
 import Innings from "./Innings";
 
 function TabPanel(props) {

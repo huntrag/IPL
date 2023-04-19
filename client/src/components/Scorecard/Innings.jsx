@@ -6,7 +6,7 @@ import { Stack } from "@mui/material";
 
 const Innings = () => {
   return (
-    <Stack direction="column" alignItems={"center"}>
+    <Stack direction="column" alignItems={"center"} spacing={2}>
       <Batting />
       <Bowling />
     </Stack>
