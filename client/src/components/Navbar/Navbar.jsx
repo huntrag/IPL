@@ -1,37 +1,18 @@
 import * as React from "react";
 import { styled, useTheme } from "@mui/material/styles";
-import Drawer from "@mui/material/Drawer";
 import CssBaseline from "@mui/material/CssBaseline";
 import MuiAppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
-import Divider from "@mui/material/Divider";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
-import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
-import ChevronRightIcon from "@mui/icons-material/ChevronRight";
-import InboxIcon from "@mui/icons-material/MoveToInbox";
-import MailIcon from "@mui/icons-material/Mail";
 
-import {
-  List,
-  Box,
-  ListItem,
-  ListItemButton,
-  ListItemText,
-  ListItemIcon,
-  Button,
-} from "@mui/material";
-import {
-  DirectionsRun,
-  EmojiEvents,
-  Home,
-  People,
-  TableChart,
-} from "@mui/icons-material";
+import { Button } from "@mui/material";
 
 import { useSelector, useDispatch } from "react-redux";
 import { uiActions } from "../../store/ui-slice";
+
+import { Loader } from "../../components";
 
 const drawerWidth = 240;
 
@@ -61,8 +42,14 @@ const Navbar = () => {
     dispatch(uiActions.showDrawer());
   };
 
+  const handleLoading = () => {
+    dispatch(uiActions.showLoading());
+  };
+
   return (
     <AppBar position="sticky" open={open}>
+      <Loader />
+      <CssBaseline />
       <Toolbar>
         <IconButton
           color="inherit"
@@ -82,6 +69,7 @@ const Navbar = () => {
           IPL Stats
         </Typography>
         <Button
+          onClick={handleLoading}
           variant="outlined"
           color="inherit"
           sx={{

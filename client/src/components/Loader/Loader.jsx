@@ -1,15 +1,24 @@
 import * as React from "react";
 import { Stack, Button, Modal } from "@mui/material";
 import { ThreeCircles } from "react-loader-spinner";
+import { useSelector, useDispatch } from "react-redux";
+import { uiActions } from "../../store/ui-slice";
 
-export default function BasicModal() {
-  const [open, setOpen] = React.useState(false);
-  const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
+import { Box } from "@mui/material";
+
+export default function Loader() {
+  const dispatch = useDispatch();
+  const open = useSelector((state) => state.ui.isLoading);
+  const handleOpen = () => {
+    dispatch(uiActions.showLoading());
+  };
+
+  const handleClose = () => {
+    dispatch(uiActions.hideLoading());
+  };
 
   return (
-    <div>
-      <Button onClick={handleOpen}>Open modal</Button>
+    <React.Fragment>
       <Modal
         open={open}
         onClick={handleClose}
@@ -38,6 +47,6 @@ export default function BasicModal() {
           />
         </Stack>
       </Modal>
-    </div>
+    </React.Fragment>
   );
 }
