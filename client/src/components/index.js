@@ -12,3 +12,5 @@ export { default as Scorecard } from "./Scorecard/Scorecard";
 export { default as Summary } from "./Summary/Summary";
 export { default as Comments } from "./Comments/Comments";
 export { default as Loader } from "./Loader/Loader";
+export { default as FeaturedPlayerCard } from "./FeaturedPlayerCard/FeaturedPlayerCard";
+export { default as PlayerCard } from "./PlayerCard/PlayerCard";
