@@ -4,7 +4,6 @@ import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import { CssBaseline, Divider, Stack, Box } from "@mui/material";
 import PlayerInfo from "../PlayerInfo/PlayerInfo";
-
 // player pic: https://scores.iplt20.com/ipl/playerimages/Virat%20Kohli.png
 
 export default function PlayerCard(props) {
