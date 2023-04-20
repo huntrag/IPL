@@ -3,8 +3,8 @@
 ### Team members:
 
 - [Raghav Gade](https://github.com/huntrag)
-- Narasimhan Kovalai
-- Prasad Kukde
+- [Narasimhan Kovalai](https://github.com/NarasimhanKovalai)
+- [Prasad Kukde](https://github.com/prasadkukde)
 
 To open the project in your system using yarn, make sure you have it installed in your system:
 
