@@ -5,6 +5,11 @@ import Autocomplete, { createFilterOptions } from "@mui/material/Autocomplete";
 
 import { Box } from "@mui/material";
 import { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+
+import { uiActions } from "../../store/ui-slice";
+import { pointsActions } from "../../store/points-slice";
+import data from "../../../../scripts/live-table.json";
 
 const filterOptions = createFilterOptions({
   matchFrom: "any",
@@ -12,10 +17,24 @@ const filterOptions = createFilterOptions({
 });
 
 export default function Filter() {
+  const loading = useSelector((state) => state.ui.isLoading);
+  const dispatch = useDispatch();
   const [value, setValue] = useState();
 
   useEffect(() => {
-    console.log(value);
+    if (value !== null && value !== undefined) {
+      dispatch(uiActions.showLoading());
+
+      console.log("First", loading);
+      setTimeout(() => {
+        dispatch(pointsActions.getPoints(data));
+        dispatch(uiActions.hideLoading());
+        console.log(value);
+        console.log("Second", loading);
+      }, 1000);
+    } else {
+      dispatch(pointsActions.getPoints([]));
+    }
   }, [value]);
 
   return (
