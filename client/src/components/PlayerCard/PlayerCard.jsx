@@ -1,13 +1,9 @@
 import * as React from "react";
 import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
-import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
-import { Avatar, CssBaseline, Divider, Stack, Box } from "@mui/material";
+import { CssBaseline, Divider, Stack, Box } from "@mui/material";
 import PlayerInfo from "../PlayerInfo/PlayerInfo";
-
-import defaultPlayer from "../../assets/default-player.png";
 
 // player pic: https://scores.iplt20.com/ipl/playerimages/Virat%20Kohli.png
 
@@ -48,7 +44,7 @@ export default function PlayerCard(props) {
               height: 233,
             }}
             alt={`${player.name}`}
-            src={`https://scores.iplt20.com/ipl/playerimagess/${player.name}.png`}
+            src={`https://scores.iplt20.com/ipl/playerimages/${player.name}.png`}
             onError={({ currentTarget }) => {
               currentTarget.onerror = null; // prevents looping
               currentTarget.src =
