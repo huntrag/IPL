@@ -14,3 +14,5 @@ export { default as Comments } from "./Comments/Comments";
 export { default as Loader } from "./Loader/Loader";
 export { default as FeaturedPlayerCard } from "./FeaturedPlayerCard/FeaturedPlayerCard";
 export { default as PlayerCard } from "./PlayerCard/PlayerCard";
+export { default as Filter } from "./Filter/Filter";
+export { default as FilterTeam } from "./Filter/FilterTeam";

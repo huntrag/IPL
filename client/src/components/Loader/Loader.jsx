@@ -11,6 +11,8 @@ export default function Loader() {
     dispatch(uiActions.hideLoading());
   };
 
+  console.log(open);
+
   return (
     <React.Fragment>
       <Modal

@@ -47,7 +47,7 @@ export default function Rightbar() {
       alignSelf={"center"}
       bgcolor="blue"
     >
-      <CssBaseline />
+      <CssBaseline enableColorScheme />
       <Grid>
         <TableContainer
           component={Paper}

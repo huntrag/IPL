@@ -18,6 +18,7 @@ const Main = styled("main", { shouldForwardProp: (prop) => prop !== "open" })(
         duration: theme.transitions.duration.enteringScreen,
       }),
       marginLeft: 0,
+      minHeight: "92.5vh",
     }),
     backgroundColor: "ghostwhite",
   })

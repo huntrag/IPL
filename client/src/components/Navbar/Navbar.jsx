@@ -35,6 +35,7 @@ const AppBar = styled(MuiAppBar, {
 
 const Navbar = () => {
   const dispatch = useDispatch();
+  const isLoading = useSelector((state) => state.ui.isLoading);
 
   const open = useSelector((state) => state.ui.drawerIsVis);
 
@@ -44,6 +45,11 @@ const Navbar = () => {
 
   const handleLoading = () => {
     dispatch(uiActions.showLoading());
+    console.log("nav first", isLoading);
+    setTimeout(() => {
+      dispatch(uiActions.hideLoading());
+    }, 1000);
+    console.log("nav second", isLoading);
   };
 
   return (
