@@ -12,7 +12,7 @@ import { Button } from "@mui/material";
 import { useSelector, useDispatch } from "react-redux";
 import { uiActions } from "../../store/ui-slice";
 
-import { Loader } from "../../components";
+import { Loader } from "..";
 
 const drawerWidth = 240;
 
