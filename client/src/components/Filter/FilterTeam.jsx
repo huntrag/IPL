@@ -66,7 +66,7 @@ function FilterTeam() {
         }}
         id="filter-demo"
         options={teams}
-        getOptionLabel={(option) => `${option.name} (${option.short})`}
+        getOptionLabel={(option) => <Label short={option.short} />}
         filterOptions={filterOptions}
         sx={{ width: 300 }}
         renderInput={(params) => <TextField {...params} label="Team 2" />}
