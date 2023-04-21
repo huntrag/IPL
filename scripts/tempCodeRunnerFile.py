@@ -1,0 +1,1 @@
+    # team1['wickets']=lst[0].split('/')[1]
