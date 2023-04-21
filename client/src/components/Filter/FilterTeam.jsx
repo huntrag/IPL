@@ -3,7 +3,7 @@ import { useState } from "react";
 import TextField from "@mui/material/TextField";
 import Autocomplete, { createFilterOptions } from "@mui/material/Autocomplete";
 
-import { CssBaseline, Stack, Typography, Avatar } from "@mui/material";
+import { CssBaseline, Stack } from "@mui/material";
 import { useEffect } from "react";
 
 const filterOptions = createFilterOptions({
@@ -26,19 +26,6 @@ function FilterTeam() {
     }
   }, [team1, team2]);
 
-  const Label = (props) => {
-    return (
-      <Stack direction="row" alignItems={"center"}>
-        <Avatar
-          alt={props.short}
-          src={`https://scores.iplt20.com/ipl/teamlogos/${props.short}.png?v=2`}
-          sx={{ height: 1, mr: 1 }}
-        />
-        <Typography>{props.short}</Typography>
-      </Stack>
-    );
-  };
-
   return (
     <Stack
       direction="row"
@@ -54,7 +41,7 @@ function FilterTeam() {
         }}
         id="filter-demo"
         options={teams}
-        getOptionLabel={(option) => <Label short={option.short} />}
+        getOptionLabel={(option) => `${option.name}`}
         filterOptions={filterOptions}
         sx={{ width: 300 }}
         renderInput={(params) => <TextField {...params} label="Team 1" />}
@@ -66,7 +53,7 @@ function FilterTeam() {
         }}
         id="filter-demo"
         options={teams}
-        getOptionLabel={(option) => <Label short={option.short} />}
+        getOptionLabel={(option) => `${option.name}`}
         filterOptions={filterOptions}
         sx={{ width: 300 }}
         renderInput={(params) => <TextField {...params} label="Team 2" />}

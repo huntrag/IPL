@@ -22,6 +22,7 @@ import {
   EmojiEvents,
   Home,
   People,
+  SportsCricket,
   TableChart,
 } from "@mui/icons-material";
 
@@ -55,6 +56,11 @@ export default function Sidebar() {
       name: "Home",
       icon: <Home />,
       url: "/",
+    },
+    {
+      name: "Current Results",
+      icon: <SportsCricket />,
+      url: "/results",
     },
     {
       name: "Upcoming Matches",

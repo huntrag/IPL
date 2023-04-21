@@ -7,3 +7,4 @@ export { default as Stats } from "./Stats/Stats";
 export { default as Home } from "./Home/Home";
 export { default as UpcomingMatches } from "./UpcomingMatches/UpcomingMatches";
 export { default as Match } from "./Match/Match";
+export { default as Results } from "./Results/Results";

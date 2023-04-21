@@ -8,14 +8,14 @@
       "short": "KKR",
       "name": "Kolkata Knight Riders",
       "overs": "20",
-      "runs": "127",
+      "score": "127",
       "wickets": "10"
     },
     "team2": {
       "short": "DC",
       "name": "Delhi Capitals",
       "overs": "19.2",
-      "runs": "128",
+      "score": "128",
       "wickets": "6"
     },
     "link": "https://www.sportskeeda.com/live-cricket-score/delhi-capitals-vs-kolkata-knight-riders-match-28-20-april-2023",
@@ -30,14 +30,14 @@
       "short": "RCB",
       "name": "Royal Challengers Bangalore",
       "overs": "20",
-      "runs": "174",
+      "score": "174",
       "wickets": "4"
     },
     "team2": {
       "short": "PBKS",
       "name": "Punjab Kings",
       "overs": "18.2",
-      "runs": "150",
+      "score": "150",
       "wickets": "10"
     },
     "link": "https://www.sportskeeda.com/live-cricket-score/punjab-kings-vs-royal-challengers-bangalore-match-27-20-april-2023",
@@ -52,14 +52,14 @@
       "short": "LSG",
       "name": "Lucknow Super Giants",
       "overs": "20",
-      "runs": "154",
+      "score": "154",
       "wickets": "7"
     },
     "team2": {
       "short": "RR",
       "name": "Rajasthan Royals",
       "overs": "20",
-      "runs": "144",
+      "score": "144",
       "wickets": "6"
     },
     "link": "https://www.sportskeeda.com/live-cricket-score/rajasthan-royals-vs-lucknow-super-giants-26th-match-19-april-2023",
@@ -74,14 +74,14 @@
       "short": "MI",
       "name": "Mumbai Indians",
       "overs": "20",
-      "runs": "192",
+      "score": "192",
       "wickets": "5"
     },
     "team2": {
       "short": "SRH",
       "name": "Sunrisers Hyderabad",
       "overs": "19.5",
-      "runs": "178",
+      "score": "178",
       "wickets": "10"
     },
     "link": "https://www.sportskeeda.com/live-cricket-score/sunrisers-hyderabad-vs-mumbai-indians-match-25-18-april-2023",
@@ -96,14 +96,14 @@
       "short": "CSK",
       "name": "Chennai Super Kings",
       "overs": "20",
-      "runs": "226",
+      "score": "226",
       "wickets": "6"
     },
     "team2": {
       "short": "RCB",
       "name": "Royal Challengers Bangalore",
       "overs": "20",
-      "runs": "218",
+      "score": "218",
       "wickets": "8"
     },
     "link": "https://www.sportskeeda.com/live-cricket-score/royal-challengers-bangalore-vs-chennai-super-kings-match-24-17-april-2023",
@@ -118,14 +118,14 @@
       "short": "GT",
       "name": "Gujarat Titans",
       "overs": "20",
-      "runs": "177",
+      "score": "177",
       "wickets": "7"
     },
     "team2": {
       "short": "RR",
       "name": "Rajasthan Royals",
       "overs": "19.2",
-      "runs": "179",
+      "score": "179",
       "wickets": "7"
     },
     "link": "https://www.sportskeeda.com/live-cricket-score/gujarat-titans-vs-rajasthan-royals-match-23-16-april-2023",
@@ -140,14 +140,14 @@
       "short": "KKR",
       "name": "Kolkata Knight Riders",
       "overs": "20",
-      "runs": "185",
+      "score": "185",
       "wickets": "6"
     },
     "team2": {
       "short": "MI",
       "name": "Mumbai Indians",
       "overs": "17.4",
-      "runs": "186",
+      "score": "186",
       "wickets": "5"
     },
     "link": "https://www.sportskeeda.com/live-cricket-score/mumbai-indians-vs-kolkata-knight-riders-match-22-16-april-2023",
@@ -162,14 +162,14 @@
       "short": "LSG",
       "name": "Lucknow Super Giants",
       "overs": "20",
-      "runs": "159",
+      "score": "159",
       "wickets": "8"
     },
     "team2": {
       "short": "PBKS",
       "name": "Punjab Kings",
       "overs": "19.3",
-      "runs": "161",
+      "score": "161",
       "wickets": "8"
     },
     "link": "https://www.sportskeeda.com/live-cricket-score/lucknow-super-giants-vs-punjab-kings-21st-match-15-april-2023",
@@ -184,14 +184,14 @@
       "short": "RCB",
       "name": "Royal Challengers Bangalore",
       "overs": "20",
-      "runs": "174",
+      "score": "174",
       "wickets": "6"
     },
     "team2": {
       "short": "DC",
       "name": "Delhi Capitals",
       "overs": "20",
-      "runs": "151",
+      "score": "151",
       "wickets": "9"
     },
     "link": "https://www.sportskeeda.com/live-cricket-score/royal-challengers-bangalore-vs-delhi-capitals-20th-match-15-april-2023",
@@ -206,14 +206,14 @@
       "short": "SRH",
       "name": "Sunrisers Hyderabad",
       "overs": "20",
-      "runs": "228",
+      "score": "228",
       "wickets": "4"
     },
     "team2": {
       "short": "KKR",
       "name": "Kolkata Knight Riders",
       "overs": "20",
-      "runs": "205",
+      "score": "205",
       "wickets": "7"
     },
     "link": "https://www.sportskeeda.com/live-cricket-score/kolkata-knight-riders-vs-sunrisers-hyderabad-19th-match-14-april-2023",
@@ -228,14 +228,14 @@
       "short": "PBKS",
       "name": "Punjab Kings",
       "overs": "20",
-      "runs": "153",
+      "score": "153",
       "wickets": "8"
     },
     "team2": {
       "short": "GT",
       "name": "Gujarat Titans",
       "overs": "19.5",
-      "runs": "154",
+      "score": "154",
       "wickets": "4"
     },
     "link": "https://www.sportskeeda.com/live-cricket-score/punjab-kings-vs-gujarat-titans-match-18-13-april-2023",
@@ -250,14 +250,14 @@
       "short": "RR",
       "name": "Rajasthan Royals",
       "overs": "20",
-      "runs": "175",
+      "score": "175",
       "wickets": "8"
     },
     "team2": {
       "short": "CSK",
       "name": "Chennai Super Kings",
       "overs": "20",
-      "runs": "172",
+      "score": "172",
       "wickets": "6"
     },
     "link": "https://www.sportskeeda.com/live-cricket-score/chennai-super-kings-vs-rajasthan-royals-match-17-12-april-2023",
@@ -272,14 +272,14 @@
       "short": "DC",
       "name": "Delhi Capitals",
       "overs": "19.4",
-      "runs": "172",
+      "score": "172",
       "wickets": "10"
     },
     "team2": {
       "short": "MI",
       "name": "Mumbai Indians",
       "overs": "20",
-      "runs": "173",
+      "score": "173",
       "wickets": "4"
     },
     "link": "https://www.sportskeeda.com/live-cricket-score/delhi-capitals-vs-mumbai-indians-16th-match-11-april-2023",
@@ -294,14 +294,14 @@
       "short": "RCB",
       "name": "Royal Challengers Bangalore",
       "overs": "20",
-      "runs": "212",
+      "score": "212",
       "wickets": "2"
     },
     "team2": {
       "short": "LSG",
       "name": "Lucknow Super Giants",
       "overs": "20",
-      "runs": "213",
+      "score": "213",
       "wickets": "9"
     },
     "link": "https://www.sportskeeda.com/live-cricket-score/royal-challengers-bangalore-vs-lucknow-super-giants-15th-match-10-april-2023",
@@ -316,14 +316,14 @@
       "short": "PBKS",
       "name": "Punjab Kings",
       "overs": "20",
-      "runs": "143",
+      "score": "143",
       "wickets": "9"
     },
     "team2": {
       "short": "SRH",
       "name": "Sunrisers Hyderabad",
       "overs": "17.1",
-      "runs": "145",
+      "score": "145",
       "wickets": "2"
     },
     "link": "https://www.sportskeeda.com/live-cricket-score/sunrisers-hyderabad-vs-punjab-kings-match-14-09-april-2023",
@@ -338,14 +338,14 @@
       "short": "GT",
       "name": "Gujarat Titans",
       "overs": "20",
-      "runs": "204",
+      "score": "204",
       "wickets": "4"
     },
     "team2": {
       "short": "KKR",
       "name": "Kolkata Knight Riders",
       "overs": "20",
-      "runs": "207",
+      "score": "207",
       "wickets": "7"
     },
     "link": "https://www.sportskeeda.com/live-cricket-score/gujarat-titans-vs-kolkata-knight-riders-13th-match-09-april-2023",
@@ -360,14 +360,14 @@
       "short": "MI",
       "name": "Mumbai Indians",
       "overs": "20",
-      "runs": "157",
+      "score": "157",
       "wickets": "8"
     },
     "team2": {
       "short": "CSK",
       "name": "Chennai Super Kings",
       "overs": "18.1",
-      "runs": "159",
+      "score": "159",
       "wickets": "3"
     },
     "link": "https://www.sportskeeda.com/live-cricket-score/mumbai-indians-vs-chennai-super-kings-12th-match-08-april-2023",
@@ -382,14 +382,14 @@
       "short": "RR",
       "name": "Rajasthan Royals",
       "overs": "20",
-      "runs": "199",
+      "score": "199",
       "wickets": "4"
     },
     "team2": {
       "short": "DC",
       "name": "Delhi Capitals",
       "overs": "20",
-      "runs": "142",
+      "score": "142",
       "wickets": "9"
     },
     "link": "https://www.sportskeeda.com/live-cricket-score/rajasthan-royals-vs-delhi-capitals-11th-match-08-april-2023",
@@ -404,14 +404,14 @@
       "short": "SRH",
       "name": "Sunrisers Hyderabad",
       "overs": "20",
-      "runs": "121",
+      "score": "121",
       "wickets": "8"
     },
     "team2": {
       "short": "LSG",
       "name": "Lucknow Super Giants",
       "overs": "16",
-      "runs": "127",
+      "score": "127",
       "wickets": "5"
     },
     "link": "https://www.sportskeeda.com/live-cricket-score/lucknow-super-giants-vs-sunrisers-hyderabad-match-10-07-april-2023",
@@ -426,14 +426,14 @@
       "short": "KKR",
       "name": "Kolkata Knight Riders",
       "overs": "20",
-      "runs": "204",
+      "score": "204",
       "wickets": "7"
     },
     "team2": {
       "short": "RCB",
       "name": "Royal Challengers Bangalore",
       "overs": "17.4",
-      "runs": "123",
+      "score": "123",
       "wickets": "10"
     },
     "link": "https://www.sportskeeda.com/live-cricket-score/kolkata-knight-riders-vs-royal-challengers-bangalore-match-9-06-april-2023",
@@ -448,14 +448,14 @@
       "short": "PBKS",
       "name": "Punjab Kings",
       "overs": "20",
-      "runs": "197",
+      "score": "197",
       "wickets": "4"
     },
     "team2": {
       "short": "RR",
       "name": "Rajasthan Royals",
       "overs": "20",
-      "runs": "192",
+      "score": "192",
       "wickets": "7"
     },
     "link": "https://www.sportskeeda.com/live-cricket-score/rajasthan-royals-vs-punjab-kings-8th-match-05-april-2023",
@@ -470,14 +470,14 @@
       "short": "DC",
       "name": "Delhi Capitals",
       "overs": "20",
-      "runs": "162",
+      "score": "162",
       "wickets": "8"
     },
     "team2": {
       "short": "GT",
       "name": "Gujarat Titans",
       "overs": "18.1",
-      "runs": "163",
+      "score": "163",
       "wickets": "4"
     },
     "link": "https://www.sportskeeda.com/live-cricket-score/delhi-capitals-vs-gujarat-titans-match-7-04-april-2023",
@@ -492,14 +492,14 @@
       "short": "CSK",
       "name": "Chennai Super Kings",
       "overs": "20",
-      "runs": "217",
+      "score": "217",
       "wickets": "7"
     },
     "team2": {
       "short": "LSG",
       "name": "Lucknow Super Giants",
       "overs": "20",
-      "runs": "205",
+      "score": "205",
       "wickets": "7"
     },
     "link": "https://www.sportskeeda.com/live-cricket-score/chennai-super-kings-vs-lucknow-super-giants-6th-match-03-april-2023",
@@ -514,14 +514,14 @@
       "short": "MI",
       "name": "Mumbai Indians",
       "overs": "20",
-      "runs": "171",
+      "score": "171",
       "wickets": "7"
     },
     "team2": {
       "short": "RCB",
       "name": "Royal Challengers Bangalore",
       "overs": "16.2",
-      "runs": "172",
+      "score": "172",
       "wickets": "2"
     },
     "link": "https://www.sportskeeda.com/live-cricket-score/royal-challengers-bangalore-vs-mumbai-indians-match-5-02-april-2023",
@@ -536,14 +536,14 @@
       "short": "RR",
       "name": "Rajasthan Royals",
       "overs": "20",
-      "runs": "203",
+      "score": "203",
       "wickets": "5"
     },
     "team2": {
       "short": "SRH",
       "name": "Sunrisers Hyderabad",
       "overs": "20",
-      "runs": "131",
+      "score": "131",
       "wickets": "8"
     },
     "link": "https://www.sportskeeda.com/live-cricket-score/sunrisers-hyderabad-vs-rajasthan-royals-4th-match-02-april-2023",
@@ -558,14 +558,14 @@
       "short": "LSG",
       "name": "Lucknow Super Giants",
       "overs": "20",
-      "runs": "193",
+      "score": "193",
       "wickets": "6"
     },
     "team2": {
       "short": "DC",
       "name": "Delhi Capitals",
       "overs": "20",
-      "runs": "143",
+      "score": "143",
       "wickets": "9"
     },
     "link": "https://www.sportskeeda.com/live-cricket-score/lucknow-super-giants-vs-delhi-capitals-match-3-01-april-2023",
@@ -580,14 +580,14 @@
       "short": "PBKS",
       "name": "Punjab Kings",
       "overs": "20",
-      "runs": "191",
+      "score": "191",
       "wickets": "5"
     },
     "team2": {
       "short": "KKR",
       "name": "Kolkata Knight Riders",
       "overs": "16",
-      "runs": "146",
+      "score": "146",
       "wickets": "7"
     },
     "link": "https://www.sportskeeda.com/live-cricket-score/punjab-kings-vs-kolkata-knight-riders-2nd-match-01-april-2023",
@@ -602,14 +602,14 @@
       "short": "CSK",
       "name": "Chennai Super Kings",
       "overs": "20",
-      "runs": "178",
+      "score": "178",
       "wickets": "7"
     },
     "team2": {
       "short": "GT",
       "name": "Gujarat Titans",
       "overs": "19.2",
-      "runs": "182",
+      "score": "182",
       "wickets": "5"
     },
     "link": "https://www.sportskeeda.com/live-cricket-score/gujarat-titans-vs-chennai-super-kings-1st-match-31-march-2023",
