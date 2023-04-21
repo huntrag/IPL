@@ -1,4 +1,5 @@
 import * as React from "react";
+import moment from "moment";
 import {
   Card,
   CardContent,
@@ -13,15 +14,16 @@ import { Link } from "react-router-dom";
 // import img from '../../assets/Table';
 
 export default function MatchCard(props) {
+  const match = props.match;
+  console.log(match.date);
+  const date = new Date(match.date);
+
   return (
     <Link
-      to="../match/12"
+      to={`../match/${match.id}`}
       style={{ color: "inherit", textDecoration: "inherit" }}
     >
-      <Card
-        key={props.match.no}
-        sx={{ width: 480, minWidth: 275, flexGrow: 2 }}
-      >
+      <Card key={match.id} sx={{ width: 480, minWidth: 275, flexGrow: 2 }}>
         <CssBaseline />
         <CardContent>
           <Stack
@@ -36,14 +38,15 @@ export default function MatchCard(props) {
               color="text.secondary"
               gutterBottom
             >
-              {`${props.match.no}`}
+              {`Match ${match.match_no}`}
             </Typography>
             <Typography
               sx={{ fontSize: 17 }}
               color="text.secondary"
               gutterBottom
             >
-              {`${props.match.date} : ${props.match.time}`}
+              {/* {<Moment format="MMMM Do YYYY">{date}</Moment>} */}
+              {moment(date).format("MMMM Do, YYYY")}
             </Typography>
           </Stack>
 
@@ -57,15 +60,15 @@ export default function MatchCard(props) {
               <Avatar
                 alt="Example Alt"
                 sx={{ width: "50", mr: 1.5 }}
-                src={`https://scores.iplt20.com/ipl/teamlogos/${props.match.team1Short}.png?v=2`}
+                src={`https://scores.iplt20.com/ipl/teamlogos/${match.team1.short}.png?v=2`}
                 // src={`../../assets/Table/${props.match.team1Short}`}
               />
               <Typography sx={{ fontSize: 20 }} variant="p" component="div">
-                {`${props.match.team1Short}`}
+                {`${match.team1.short}`}
               </Typography>
             </Stack>
             <Typography sx={{ fontSize: 20 }} variant="p" component="div">
-              143/6 (20)
+              {`${match.team1.score}/${match.team1.wickets} (${match.team1.overs})`}
             </Typography>
           </Stack>
           <Stack
@@ -78,14 +81,14 @@ export default function MatchCard(props) {
               <Avatar
                 alt="Example Alt"
                 sx={{ width: "50", mr: 1.5 }}
-                src={`https://scores.iplt20.com/ipl/teamlogos/${props.match.team2Short}.png?v=2`}
+                src={`https://scores.iplt20.com/ipl/teamlogos/${match.team2.short}.png?v=2`}
               />
               <Typography sx={{ fontSize: 20 }} variant="p" component="div">
-                {`${props.match.team2Short}`}
+                {`${match.team2.short}`}
               </Typography>
             </Stack>
             <Typography sx={{ fontSize: 20 }} variant="p" component="div">
-              143/6 (20)
+              {`${match.team2.score}/${match.team2.wickets} (${match.team2.overs})`}
             </Typography>
           </Stack>
           <Stack
@@ -108,7 +111,7 @@ export default function MatchCard(props) {
                 color="text.primary"
                 component="div"
               >
-                {`Ravindra Jadeja (CSK) 100*(55)`}
+                {`${match.mom.name} (${match.mom.teamShort}) ${match.mom.performance}`}
               </Typography>
             </Stack>
             <Divider />
@@ -118,7 +121,7 @@ export default function MatchCard(props) {
               component="div"
               alignSelf={"center"}
             >
-              RR won by 3 runs
+              {`${match.result}`}
             </Typography>
           </Stack>
         </CardContent>
