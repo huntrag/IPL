@@ -9,18 +9,17 @@ import {
   Divider,
   Stack,
 } from "@mui/material";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 // import img from '../../assets/Table';
 
-export default function MatchCard(props) {
+export default function LiveCard(props) {
   const match = props.match;
-  console.log(match.date);
   const date = new Date(match.date);
 
   return (
-    <a
-      href={`${match.link}`}
+    <Link
+      to={`../match/` + props.match.id.toString()}
       style={{ color: "inherit", textDecoration: "inherit" }}
     >
       <Card key={match.id} sx={{ width: 480, minWidth: 275, flexGrow: 2 }}>
@@ -68,7 +67,7 @@ export default function MatchCard(props) {
               </Typography>
             </Stack>
             <Typography sx={{ fontSize: 20 }} variant="p" component="div">
-              {`${match.team1.score}/${match.team1.wickets} (${match.team1.overs})`}
+              {`${match.team1.runs}/${match.team1.wickets} (${match.team1.overs})`}
             </Typography>
           </Stack>
           <Stack
@@ -88,7 +87,7 @@ export default function MatchCard(props) {
               </Typography>
             </Stack>
             <Typography sx={{ fontSize: 20 }} variant="p" component="div">
-              {`${match.team2.score}/${match.team2.wickets} (${match.team2.overs})`}
+              {`${match.team2.runs}/${match.team2.wickets} (${match.team2.overs})`}
             </Typography>
           </Stack>
           <Stack
@@ -126,6 +125,6 @@ export default function MatchCard(props) {
           </Stack>
         </CardContent>
       </Card>
-    </a>
+    </Link>
   );
 }

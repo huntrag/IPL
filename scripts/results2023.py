@@ -46,7 +46,7 @@ for card in soup.findAll('div',attrs={'class':"keeda_cricket_event_card"}):
     #     break
     quote={}
     lst=card.find('div',attrs={'class':"keeda_cricket_event_date"})
-    quote["id"]=int(uuid.uuid4())
+    quote["id"]=int(uuid.uuid4())%100000000
     quote["date"]=lst['data-match-time']
 
     lst=card.find('div',attrs={'class':"match-description"}).text
@@ -204,8 +204,8 @@ for card in soup.findAll('div',attrs={'class':"keeda_cricket_event_card"}):
 
     
 
-with open("./scripts/results2023_temp.json","w") as outfile:
+with open("./scripts/results2023.json","w") as outfile:
     json.dump(quotes,outfile)
 
-with open("./scripts/match2023_temp.json","w") as outfile:
+with open("./scripts/match2023.json","w") as outfile:
     json.dump(books,outfile)
