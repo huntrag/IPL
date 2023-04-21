@@ -35,7 +35,12 @@ revtag["LSG"]="Lucknow Super Giants"
 
 quotes=[]
 
+# cnt=0
+
 for card in soup.findAll('div',attrs={'class':"keeda_cricket_event_card"}):
+    # cnt+=1
+    # if cnt==8:
+    #     break
     quote={}
     lst=card.find('div',attrs={'class':"keeda_cricket_event_date"})
     quote["date"]=lst['data-match-time']
@@ -46,34 +51,37 @@ for card in soup.findAll('div',attrs={'class':"keeda_cricket_event_card"}):
 
     quote['result']=card.find('div',attrs={'class':'keeda_cricket_result'}).span.text
 
-    team1={}
-    team1card=card.findAll('div',attrs={'class':"keeda_cricket_team"})[0]
-    team1short=team1card.find('span',attrs={'class':'keeda_cricket_team_name'}).text[1:-1]
-    team1['short']=team1short
-    team1['name']=revtag[team1short]
-    team1score=team1card.find('span',attrs={'class':'keeda_cricket_score'}).text
-    scorestr=team1score[1:-1]
-    scorelst=scorestr.split(' ')
-    team1['overs']=scorelst[1][1:]
-    team1['runs']=scorelst[0].split('/')[0]
-    team1['wickets']=scorelst[0].split('/')[1]
-    quote["team1"]=team1
+    teamcnt=0
 
+    for team1card in card.findAll('div',attrs={'class':"keeda_cricket_team"}):
+        team1={}
+        team1short=team1card.find('span',attrs={'class':'keeda_cricket_team_name'}).text[1:-1]
+        team1['short']=team1short
+        team1['name']=revtag[team1short]
+        team1score=team1card.find('span',attrs={'class':'keeda_cricket_score'}).text
+        scorestr=team1score[1:-1]
+        scorelst=scorestr.split(' ')
+        team1['overs']=scorelst[1][1:]
+        team1['runs']=scorelst[0].split('/')[0]
+        team1['wickets']=scorelst[0].split('/')[1]
+        if teamcnt==0:
+            quote["team1"]=team1
+        else:
+            quote['team2']=team1
+        teamcnt=1
 
-    team2={}
-    team2card=card.findAll('div',attrs={'class':"keeda_cricket_team"})[1]
-    team2short=team2card.find('span',attrs={'class':'keeda_cricket_team_name'}).text[1:-1]
-    team2['short']=team2short
-    team2['name']=revtag[team2short]
-    team2score=team2card.find('span',attrs={'class':'keeda_cricket_score'}).text
-    scorestr=team2score[1:-1]
-    scorelst=scorestr.split(' ')
-    team2['overs']=scorelst[1][1:]
-    team2['runs']=scorelst[0].split('/')[0]
-    team2['wickets']=scorelst[0].split('/')[1]
-    quote["team2"]=team2
+    mom={}
+
+    quote['link']="https://www.sportskeeda.com"+card.a['href']
+    soupy = BeautifulSoup(requests.get(url=quote['link'], headers=headers).content, 'html5lib')
+
+    momy=soupy.find('div',attrs={'id':'man-of-match'})
+    mom['name']=momy.find('span',attrs={'id':'player-of-match'}).text[1:-1]
+    mom['performance']=momy.find('div',attrs={'id':'batting-stat'}).text[1:-1]+" "+momy.find('div',attrs={'id':'bowling-stat'}).text[1:-1]
+    quote['mom']=mom
+    
 
     quotes.append(quote)
 
-with open("./scripts/results2023.json","w") as outfile:
+with open("./scripts/results2023_temp.json","w") as outfile:
     json.dump(quotes,outfile)
