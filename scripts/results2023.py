@@ -2,6 +2,7 @@ import requests
 import json
 from bs4 import BeautifulSoup
 import uuid
+from operator import itemgetter
 
 headers = {'User-Agent': "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36 Edge/12.246"}
 URL="https://www.sportskeeda.com/go/ipl/results"
@@ -92,6 +93,11 @@ for card in soup.findAll('div',attrs={'class':"keeda_cricket_event_card"}):
     scorecard={}
 
     inncnt=0
+    top3bowls=[]
+    top3bats=[]
+    summary={}
+    summary['mom']=quote['mom']
+
     for bat in soupy.findAll('div',attrs={'class':'innings-table-batting'}):
         inn={}
         batting={}
@@ -110,7 +116,7 @@ for card in soup.findAll('div',attrs={'class':"keeda_cricket_event_card"}):
         
         batting['score']=scores
         batting['totalextras']=bat.find('div',attrs={'class','innings-extras-runs'}).text
-        batting['extrasinfo']="".join(bat.find('div',attrs={'class','innings-extras-info'}).text.split('\n'))
+        batting['extrasinfo']=" ".join(bat.find('div',attrs={'class','innings-extras-info'}).text.split('\n'))
         yettobat=[]
         yethelper=bat.find('div',attrs={'class','innings-dnb-info'})
         for player in yethelper.findAll('a'):
@@ -143,19 +149,56 @@ for card in soup.findAll('div',attrs={'class':"keeda_cricket_event_card"}):
 
             bowling.append(bowler)
         inn['bowling']=bowling
+        top3bowl=sorted(bowling,key=lambda d:(-d['wickets'],d['runs']))[0:3]
+        top3bat=sorted(scores,key=lambda d:(-d['runs'],d['balls']))[0:3]
+
+        top3bowls.append(top3bowl)
+        top3bats.append(top3bats)
 
         inn['batting']=batting
         if inncnt==1:
             inn['team']=quote['team1']['name']
             inn['short']=quote['team1']['short']
+            inn['totalruns']=int(quote['team1']['runs'])
+            inn['totalwickets']=int(quote['team1']['wickets'])
+            inn['overs']=float(quote['team1']['overs'])
+            team1={}
+            team1['name']=quote['team1']['name']
+            team1['short']=quote['team1']['short']
+            team1['runs']=int(quote['team1']['runs'])
+            team1['wickets']=int(quote['team1']['wickets'])
+            team1['overs']=float(quote['team1']['overs'])
+            team1['batting']=top3bat
+            team1['bowling']=top3bowl
+            summary['team1']=team1
+            
             scorecard['inn1']=inn
         if inncnt==2:
             inn['team']=quote['team2']['name']
             inn['short']=quote['team2']['short']
+            inn['totalruns']=int(quote['team2']['runs'])
+            inn['totalwickets']=int(quote['team2']['wickets'])
+            inn['overs']=float(quote['team2']['overs'])
+
+            team2={}
+            team2['name']=quote['team2']['name']
+            team2['short']=quote['team2']['short']
+            team2['runs']=int(quote['team2']['runs'])
+            team2['wickets']=int(quote['team2']['wickets'])
+            team2['overs']=float(quote['team2']['overs'])
+            team2['batting']=top3bat
+            team2['bowling']=top3bowl
+            summary['team2']=team2
+
             scorecard['inn2']=inn
         inncnt+=1
     
+    book['summary']=summary
     book['scorecard']=scorecard
+
+    # Summary starts here
+    
+    
 
     books.append(book)
 
