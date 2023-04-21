@@ -41,12 +41,12 @@ books=[]
 cnt=0
 
 for card in soup.findAll('div',attrs={'class':"keeda_cricket_event_card"}):
-    cnt+=1
-    if cnt==2:
-        break
+    # cnt+=1
+    # if cnt==2:
+    #     break
     quote={}
     lst=card.find('div',attrs={'class':"keeda_cricket_event_date"})
-    # quote["id"]=uuid.uuid4()
+    quote["id"]=int(uuid.uuid4())
     quote["date"]=lst['data-match-time']
 
     lst=card.find('div',attrs={'class':"match-description"}).text
@@ -91,7 +91,7 @@ for card in soup.findAll('div',attrs={'class':"keeda_cricket_event_card"}):
     book={}
 
     scorecard={}
-
+    book["id"]=quote["id"]
     inncnt=0
     top3bowls=[]
     top3bats=[]
@@ -204,8 +204,8 @@ for card in soup.findAll('div',attrs={'class':"keeda_cricket_event_card"}):
 
     
 
-with open("./scripts/results2023.json","w") as outfile:
+with open("./scripts/results2023_temp.json","w") as outfile:
     json.dump(quotes,outfile)
 
-with open("./scripts/match2023.json","w") as outfile:
+with open("./scripts/match2023_temp.json","w") as outfile:
     json.dump(books,outfile)
