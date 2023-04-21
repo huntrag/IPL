@@ -1,0 +1,17 @@
+[
+  { "name": "Rajasthan Royals", "short": "RR" },
+  { "name": "Royal Challengers Bangalore", "short": "RCB" },
+  { "name": "Sunrisers Hyderabad", "short": "SRH" },
+  { "name": "Delhi Capitals", "short": "DC" },
+  { "name": "Chennai Super Kings", "short": "CSK" },
+  { "name": "Gujarat Titans", "short": "GT" },
+  { "name": "Lucknow Super Giants", "short": "LSG" },
+  { "name": "Kolkata Knight Riders", "short": "KKR" },
+  { "name": "Punjab Kings", "short": "PBKS" },
+  { "name": "Mumbai Indians", "short": "MI" },
+  { "name": "Rising Pune Supergiants", "short": "RPS" },
+  { "name": "Gujarat Lions", "short": "GL" },
+  { "name": "Pune Warriors", "short": "PWI" },
+  { "name": "Deccan Chargers", "short": "DC" },
+  { "name": "Kochi Tuskers Kerala", "short": "KTK" }
+]

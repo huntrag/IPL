@@ -1,0 +1,1 @@
+team_logo=https://scores.iplt20.com/ipl/teamlogos/RCB.png?v=2

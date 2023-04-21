@@ -43,21 +43,21 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
 export default function Pointstable() {
   const data = useSelector((state) => state.points.points);
   return (
-    <Grid
-      container
+    <Stack
       justifyContent={"center"}
       alignItems={"center"}
-      rowSpacing={3}
+      direction="column"
+      spacing={4}
     >
       <CssBaseline />
-      <Grid item alignSelf={"start"}>
+      <Grid item alignSelf={"center"}>
         <Filter />
       </Grid>
       {data.length !== 0 && (
         <Grid item>
           <TableContainer
             component={Paper}
-            sx={{ position: { xs: "sticky", sm: "sticky", md: "sticky" } }}
+            // sx={{ position: { xs: "sticky", sm: "sticky", md: "sticky" } }}
           >
             <Table sx={{ minWidth: 600 }} aria-label="customized table">
               <TableHead>
@@ -103,9 +103,9 @@ export default function Pointstable() {
                     <StyledTableCell>
                       <Stack direction="row" alignItems={"center"}>
                         <Avatar
-                          alt="Example Alt"
+                          alt={row.name}
                           src={row.img}
-                          sx={{ height: "1%", width: "3%", mr: 1 }}
+                          sx={{ height: 1, mr: 1 }}
                         />
                         <Typography variant="p" fontSize={16}>
                           {row.name}
@@ -147,6 +147,6 @@ export default function Pointstable() {
           </TableContainer>
         </Grid>
       )}
-    </Grid>
+    </Stack>
   );
 }

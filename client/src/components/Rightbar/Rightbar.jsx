@@ -39,15 +39,13 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
 
 export default function Rightbar() {
   return (
-    <Grid
-      container
+    <Stack
       justifyContent={"center"}
       alignItems={"center"}
-      flex={1}
-      alignSelf={"center"}
-      bgcolor="blue"
+      direction="column"
+      p={2}
     >
-      <CssBaseline enableColorScheme />
+      <CssBaseline />
       <Grid>
         <TableContainer
           component={Paper}
@@ -102,7 +100,7 @@ export default function Rightbar() {
                       <Avatar
                         alt="Example Alt"
                         src={row.img}
-                        sx={{ height: "12%", width: "20%", mr: 1 }}
+                        sx={{ height: 1, mr: 1 }}
                       />
                       <Typography variant="p" fontSize={15}>
                         {row.name}
@@ -146,6 +144,6 @@ export default function Rightbar() {
           </Table>
         </TableContainer>
       </Grid>
-    </Grid>
+    </Stack>
   );
 }

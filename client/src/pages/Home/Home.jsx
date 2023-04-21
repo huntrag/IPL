@@ -10,7 +10,6 @@ const Home = () => {
     >
       <Stack
         flex={1}
-        sx={{ width: "100%" }}
         alignItems={"center"}
         justifyContent={"center"}
         direction="column"
@@ -25,7 +24,7 @@ const Home = () => {
             <FeaturedMatches />
           </Stack>
         </Paper>
-        <Divider sx={{ width: "80%", height: 2, m: 4 }} />
+        <Divider sx={{ width: "80%", height: 2, m: 2 }} />
         <Paper>
           <Stack direction={"column"} sx={{ m: 3 }}>
             <Box sx={{ m: 3 }}>
@@ -36,7 +35,13 @@ const Home = () => {
         </Paper>
       </Stack>
 
-      <Rightbar />
+      <Stack
+        sx={{ width: "55%" }}
+        justifyContent={"center"}
+        alignItems={"center"}
+      >
+        <Rightbar />
+      </Stack>
     </Stack>
   );
 };
