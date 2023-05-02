@@ -1,0 +1,20 @@
+.loader {
+  border: 5px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 5px solid #00f;
+  border-bottom: 5px solid #00f;
+  width: 80px;
+  height: 80px;
+  -webkit-animation: 2s linear infinite spin;
+  animation: 2s linear infinite spin;
+}
+.loader {
+  border: 5px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 5px solid #00f;
+  border-bottom: 5px solid #00f;
+  width: 80px;
+  height: 80px;
+  -webkit-animation: 2s linear infinite spin;
+  animation: 2s linear infinite spin;
+}

@@ -3,23 +3,46 @@ import "./App.css";
 
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 
-import { Home, About, Player, Players, Matches, Points, Stats } from "./pages";
-import { Layout } from "./components";
+import {
+  Home,
+  About,
+  Player,
+  Players,
+  Matches,
+  Results,
+  Points,
+  Stats,
+  UpcomingMatches,
+  Match,
+} from "./pages";
+import { Navbar, Sidebar, Main } from "./components";
+
+import { Box, Stack, ThemeProvider } from "@mui/material";
+import { useSelector } from "react-redux";
+// import videoBg from "./assets/videoBg.mp4";
 
 function App() {
-  const Navbar = () => {
+  const Layout1 = () => {
+    const open = useSelector((state) => state.ui.drawerIsVis);
+
     return (
-      <div className="App">
-        <Layout />
-        <Outlet />
-      </div>
+      <Box className="App">
+        <Navbar />
+        <Stack direction="row" justifyContent="space-between">
+          <Sidebar />
+          <Main open={open}>
+            {/* <video src={videoBg}></video> */}
+            <Outlet />
+          </Main>
+        </Stack>
+      </Box>
     );
   };
 
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <Navbar />,
+      element: <Layout1 />,
       children: [
         {
           path: "/",
@@ -46,14 +69,30 @@ function App() {
           element: <Points />,
         },
         {
+          path: "/results",
+          element: <Results />,
+        },
+        {
           path: "/stats",
           element: <Stats />,
+        },
+        {
+          path: "/upcoming-matches",
+          element: <UpcomingMatches />,
+        },
+        {
+          path: "/match/:id",
+          element: <Match />,
         },
       ],
     },
   ]);
 
-  return <RouterProvider router={router} />;
+  return (
+    // <ThemeProvider>
+    <RouterProvider router={router} />
+    // </ThemeProvider>
+  );
 }
 
 export default App;

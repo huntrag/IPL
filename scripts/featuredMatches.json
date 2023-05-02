@@ -1,0 +1,92 @@
+[
+  {
+    "date": "Apr 15",
+    "time": "03:30 PM",
+    "no": "Match 20",
+    "venue": "M.Chinnaswamy Stadium, Bengaluru",
+    "team1": "Royal Challengers Bangalore",
+    "team1Short": "RCB",
+    "team2": "Delhi Capitals",
+    "team2Short": "DC"
+  },
+  {
+    "date": "Apr 15",
+    "time": "07:30 PM",
+    "no": "Match 21",
+    "venue": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",
+    "team1": "Lucknow Super Giants",
+    "team1Short": "LSG",
+    "team2": "Punjab Kings",
+    "team2Short": "PBKS"
+  },
+  {
+    "date": "Apr 16",
+    "time": "03:30 PM",
+    "no": "Match 22",
+    "venue": "Wankhede Stadium, Mumbai",
+    "team1": "Mumbai Indians",
+    "team1Short": "MI",
+    "team2": "Kolkata Knight Riders",
+    "team2Short": "KKR"
+  },
+  {
+    "date": "Apr 16",
+    "time": "07:30 PM",
+    "no": "Match 23",
+    "venue": "Narendra Modi Stadium, Ahmedabad",
+    "team1": "Gujarat Titans",
+    "team1Short": "GT",
+    "team2": "Rajasthan Royals",
+    "team2Short": "RR"
+  },
+  {
+    "date": "Apr 17",
+    "time": "07:30 PM",
+    "no": "Match 24",
+    "venue": "M.Chinnaswamy Stadium, Bengaluru",
+    "team1": "Royal Challengers Bangalore",
+    "team1Short": "RCB",
+    "team2": "Chennai Super Kings",
+    "team2Short": "CSK"
+  },
+  {
+    "date": "Apr 18",
+    "time": "07:30 PM",
+    "no": "Match 25",
+    "venue": "Rajiv Gandhi International Stadium, Uppal, Hyderabad",
+    "team1": "Sunrisers Hyderabad",
+    "team1Short": "SRH",
+    "team2": "Mumbai Indians",
+    "team2Short": "MI"
+  },
+  {
+    "date": "Apr 19",
+    "time": "07:30 PM",
+    "no": "Match 26",
+    "venue": "Sawai Mansingh Stadium, Jaipur",
+    "team1": "Rajasthan Royals",
+    "team1Short": "RR",
+    "team2": "Lucknow Super Giants",
+    "team2Short": "LSG"
+  },
+  {
+    "date": "Apr 20",
+    "time": "03:30 PM",
+    "no": "Match 27",
+    "venue": "Punjab Cricket Association IS Bindra Stadium, Mohali, Chandigarh",
+    "team1": "Punjab Kings",
+    "team1Short": "PBKS",
+    "team2": "Royal Challengers Bangalore",
+    "team2Short": "RCB"
+  },
+  {
+    "date": "Apr 20",
+    "time": "07:30 PM",
+    "no": "Match 28",
+    "venue": "Arun Jaitley Stadium, Delhi",
+    "team1": "Delhi Capitals",
+    "team1Short": "DC",
+    "team2": "Kolkata Knight Riders",
+    "team2Short": "KKR"
+  }
+]

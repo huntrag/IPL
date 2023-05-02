@@ -1,0 +1,25 @@
+[
+  {
+    "id": 153511369049212259286313947057857941878,
+    "date": "2023-04-20T14:00:00+00:00",
+    "match_no": "28",
+    "venue": "Arun Jaitley Stadium, Delhi",
+    "result": "Delhi Capitals won by 4 wickets",
+    "team1": {
+      "short": "KKR",
+      "name": "Kolkata Knight Riders",
+      "overs": "20",
+      "runs": "127",
+      "wickets": "10"
+    },
+    "team2": {
+      "short": "DC",
+      "name": "Delhi Capitals",
+      "overs": "19.2",
+      "runs": "128",
+      "wickets": "6"
+    },
+    "link": "https://www.sportskeeda.com/live-cricket-score/delhi-capitals-vs-kolkata-knight-riders-match-28-20-april-2023",
+    "mom": { "name": "Ishant Sharma", "performance": " 2/19" }
+  }
+]

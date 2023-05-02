@@ -1,0 +1,380 @@
+[
+  {
+    "header": {
+      "toss": "RCB won the toss and decided to bowl",
+      "venue": "M Chinnaswamy Stadium",
+      "result": "CSK won by 8 runs",
+      "team1": {
+        "name": "Chennai Super Kings",
+        "short": "CSK",
+        "runs": 226,
+        "wickets": 6,
+        "overs": 20
+      },
+      "team2": {
+        "name": "Chennai Super Kings",
+        "short": "CSK",
+        "runs": 226,
+        "wickets": 6,
+        "overs": 20
+      }
+    },
+    "summary": {
+      "mom": {
+        "name": "Devon Conway",
+        "team": "RCB",
+        "performance": "83 (43)"
+      },
+      "team1": {
+        "name": "Chennai Super Kings",
+        "short": "CSK",
+        "runs": 226,
+        "wickets": 6,
+        "overs": 20,
+        "batting": [
+          {
+            "name": "Devon Conway",
+            "runs": 226,
+            "balls": 78
+          },
+          {
+            "name": "Billu Barber",
+            "runs": 226,
+            "balls": 78
+          },
+          {
+            "name": "Prakash",
+            "runs": 226,
+            "balls": 78
+          }
+        ],
+        "bowling": [
+          {
+            "name": "Wanindu Hasaranga",
+            "wickets": 1,
+            "runs": 21,
+            "overs": 2.1
+          },
+          {
+            "name": "Navdeep Saini",
+            "wickets": 1,
+            "runs": 21,
+            "overs": 2.1
+          },
+          {
+            "name": "Deepak Saini",
+            "wickets": 1,
+            "runs": 21,
+            "overs": 2.1
+          }
+        ]
+      },
+      "team2": {
+        "name": "Royal Challengers Bangalore",
+        "short": "RCB",
+        "runs": 226,
+        "wickets": 6,
+        "overs": 20,
+        "batting": [
+          {
+            "name": "Devon Conway",
+            "runs": 226,
+            "balls": 78
+          },
+          {
+            "name": "Raju",
+            "runs": 226,
+            "balls": 78
+          },
+          {
+            "name": "Pinky",
+            "runs": 226,
+            "balls": 78
+          }
+        ],
+        "bowling": [
+          {
+            "name": "Wanindu Hasaranga",
+            "wickets": 1,
+            "runs": 21,
+            "overs": 2.1
+          },
+          {
+            "name": "Kamlesh",
+            "wickets": 1,
+            "runs": 21,
+            "overs": 2.1
+          },
+          {
+            "name": "Rocky",
+            "wickets": 1,
+            "runs": 21,
+            "overs": 2.1
+          }
+        ]
+      }
+    },
+    "scorecard": {
+      "inn1": {
+        "team": "Chennai Super Kings",
+        "short": "CSK",
+        "batting": {
+          "score": [
+            {
+              "name": "Ruturaj Gaikwad",
+              "runs": 3,
+              "balls": 6,
+              "fours": 0,
+              "sixes": 0,
+              "sr": 50.0,
+              "dismissal": "c Wayne Parnell b Mohammad Siraj"
+            },
+            {
+              "name": "Devon Conway",
+              "runs": 30,
+              "balls": 6,
+              "fours": 1,
+              "sixes": 4,
+              "sr": 100.0,
+              "dismissal": "lbw Harshal Patel"
+            },
+            {
+              "name": "MS Dhoni",
+              "runs": 39,
+              "balls": 63,
+              "fours": 10,
+              "sixes": 0,
+              "sr": 300.0,
+              "dismissal": "b Harshal Patel"
+            },
+            {
+              "name": "Ambati Rayudu",
+              "runs": 39,
+              "balls": 63,
+              "fours": 10,
+              "sixes": 0,
+              "sr": 300.0,
+              "dismissal": "b Harshal Patel"
+            },
+            {
+              "name": "Moeen Ali",
+              "runs": 3,
+              "balls": 6,
+              "fours": 0,
+              "sixes": 0,
+              "sr": 50.0,
+              "dismissal": "not out"
+            }
+          ],
+          "totalextras": 7,
+          "nb": 2,
+          "w": 2,
+          "lb": 1,
+          "bye": 0,
+          "totalruns": 226,
+          "totalwickets": 6,
+          "overs": 20,
+          "yettobat": ["Tushar Deshpande", "Akash Singh", "MS Dhoni"],
+          "fallofwickets": [
+            {
+              "name": "Ruturaj Gaikwad",
+              "runs": 16,
+              "wickets": 1,
+              "overs": 2.2
+            },
+            {
+              "name": "MS Dhoni",
+              "runs": 16,
+              "wickets": 1,
+              "overs": 2.2
+            },
+            {
+              "name": "Ambati Rayudu",
+              "runs": 16,
+              "wickets": 3,
+              "overs": 10.2
+            },
+            {
+              "name": "Devon Conway",
+              "runs": 170,
+              "wickets": 3,
+              "overs": 2.2
+            }
+          ]
+        },
+        "bowling": [
+          {
+            "name": "Mohammad Siraj",
+            "overs": 4,
+            "maiden": 0,
+            "runs": 30,
+            "wickets": 1,
+            "economy": 7.95
+          },
+          {
+            "name": "Shoiab Akhtar",
+            "overs": 4,
+            "maiden": 0,
+            "runs": 30,
+            "wickets": 1,
+            "economy": 7.95
+          },
+          {
+            "name": "Sunil",
+            "overs": 4,
+            "maiden": 0,
+            "runs": 30,
+            "wickets": 1,
+            "economy": 7.95
+          },
+          {
+            "name": "Dinesh",
+            "overs": 4,
+            "maiden": 0,
+            "runs": 30,
+            "wickets": 1,
+            "economy": 7.95
+          },
+          {
+            "name": "Kapil Dev",
+            "overs": 4,
+            "maiden": 0,
+            "runs": 30,
+            "wickets": 1,
+            "economy": 7.95
+          }
+        ]
+      },
+      "inn2": {
+        "team": "Royal Challengers Bangalore",
+        "short": "RCB",
+        "batting": {
+          "score": [
+            {
+              "name": "Ruturaj Gaikwad",
+              "runs": 3,
+              "balls": 6,
+              "fours": 0,
+              "sixes": 0,
+              "sr": 50.0,
+              "dismissal": "c Wayne Parnell b Mohammad Siraj"
+            },
+            {
+              "name": "Devon Conway",
+              "runs": 30,
+              "balls": 6,
+              "fours": 1,
+              "sixes": 4,
+              "sr": 100.1,
+              "dismissal": "lbw Harshal Patel"
+            },
+            {
+              "name": "Ambati Rayudu",
+              "runs": 39,
+              "balls": 63,
+              "fours": 10,
+              "sixes": 0,
+              "sr": 300.0,
+              "dismissal": "b Harshal Patel"
+            },
+            {
+              "name": "Priti",
+              "runs": 39,
+              "balls": 63,
+              "fours": 10,
+              "sixes": 0,
+              "sr": 300.0,
+              "dismissal": "b Harshal Patel"
+            },
+            {
+              "name": "Moeen Ali",
+              "runs": 3,
+              "balls": 6,
+              "fours": 0,
+              "sixes": 0,
+              "sr": 50.0,
+              "dismissal": "not out"
+            }
+          ],
+          "totalextras": 7,
+          "nb": 2,
+          "w": 2,
+          "lb": 1,
+          "bye": 0,
+          "totalruns": 226,
+          "totalwickets": 6,
+          "overs": 20,
+          "yettobat": ["Tushar Deshpande", "Akash Singh", "MS Dhoni"],
+          "fallofwickets": [
+            {
+              "name": "Ruturaj Gaikwad",
+              "runs": 16,
+              "wickets": 1,
+              "overs": 2.2
+            },
+            {
+              "name": "Kishan",
+              "runs": 16,
+              "wickets": 1,
+              "overs": 2.2
+            },
+            {
+              "name": "Ambati Rayudu",
+              "runs": 16,
+              "wickets": 3,
+              "overs": 10.2
+            },
+            {
+              "name": "Devon Conway",
+              "runs": 170,
+              "wickets": 3,
+              "overs": 2.2
+            }
+          ]
+        },
+        "bowling": [
+          {
+            "name": "Mohammad Siraj",
+            "overs": 4,
+            "maiden": 0,
+            "runs": 30,
+            "wickets": 1,
+            "economy": 7.95
+          },
+          {
+            "name": "Shoiab Akhtar",
+            "overs": 4,
+            "maiden": 0,
+            "runs": 30,
+            "wickets": 1,
+            "economy": 7.95
+          },
+          {
+            "name": "Sunil",
+            "overs": 4,
+            "maiden": 0,
+            "runs": 30,
+            "wickets": 1,
+            "economy": 7.95
+          },
+          {
+            "name": "Dinesh",
+            "overs": 4,
+            "maiden": 0,
+            "runs": 30,
+            "wickets": 1,
+            "economy": 7.95
+          },
+          {
+            "name": "Kapil Dev",
+            "overs": 4,
+            "maiden": 0,
+            "runs": 30,
+            "wickets": 1,
+            "economy": 7.95
+          }
+        ]
+      }
+    }
+  }
+]
