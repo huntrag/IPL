@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid, Stack, Paper } from "@mui/material";
+import { Grid, Stack } from "@mui/material";
 
 import data from "../../../../scripts/results2023_temp.json";
 import { FilterTeam, LiveCard } from "../../components";

@@ -15,6 +15,15 @@ function FilterTeam() {
   const [team1, setteam1] = useState();
   const [team2, setteam2] = useState();
 
+  const filteredOptions = teams.filter((obj) => {
+    return (
+      (team1 !== undefined && team1 !== null
+        ? obj.name !== team1.name
+        : true) &&
+      (team2 !== undefined && team2 !== null ? obj.name !== team2.name : true)
+    );
+  });
+
   useEffect(() => {
     if (team1 != null && team2 != null) {
       console.log({
@@ -40,7 +49,7 @@ function FilterTeam() {
           setteam1(newteam1);
         }}
         id="filter-demo"
-        options={teams}
+        options={filteredOptions}
         getOptionLabel={(option) => `${option.name}`}
         filterOptions={filterOptions}
         sx={{ width: 300 }}
@@ -52,7 +61,7 @@ function FilterTeam() {
           setteam2(newteam2);
         }}
         id="filter-demo"
-        options={teams}
+        options={filteredOptions}
         getOptionLabel={(option) => `${option.name}`}
         filterOptions={filterOptions}
         sx={{ width: 300 }}
@@ -77,7 +86,7 @@ const teams = [
   { name: "Rising Pune Supergiants", short: "RPS" },
   { name: "Gujarat Lions", short: "GL" },
   { name: "Pune Warriors", short: "PWI" },
-  { name: "Deccan Chargers", short: "DC" },
+  { name: "Deccan Chargers", short: "DEC" },
   { name: "Kochi Tuskers Kerala", short: "KTK" },
 ];
 
