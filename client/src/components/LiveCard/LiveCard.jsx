@@ -19,7 +19,7 @@ export default function LiveCard(props) {
 
   return (
     <Link
-      to={`../match/` + props.match.id.toString()}
+      to={`../live-match/` + props.match.id.toString()}
       style={{ color: "inherit", textDecoration: "inherit" }}
     >
       <Card key={match.id} sx={{ width: 480, minWidth: 275, flexGrow: 2 }}>

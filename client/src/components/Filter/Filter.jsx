@@ -1,5 +1,6 @@
 import * as React from "react";
 import { useState } from "react";
+import axios from "axios";
 import TextField from "@mui/material/TextField";
 import Autocomplete, { createFilterOptions } from "@mui/material/Autocomplete";
 
@@ -10,6 +11,8 @@ import { useDispatch, useSelector } from "react-redux";
 import { uiActions } from "../../store/ui-slice";
 import { pointsActions } from "../../store/points-slice";
 import data from "../../../../scripts/live-table.json";
+
+const url="127.0.0.1:8000/points_table/";
 
 const filterOptions = createFilterOptions({
   matchFrom: "any",
@@ -22,15 +25,21 @@ export default function Filter() {
   const [value, setValue] = useState();
 
   useEffect(() => {
+
+    async function getData(value){
+      const res=await axios.get(`http://127.0.0.1:8000/points_table/?year=${value}`);
+      const data=await res.data;
+      dispatch(pointsActions.getPoints(data));
+      return data;
+    }
+
     if (value !== null && value !== undefined) {
       dispatch(uiActions.showLoading());
-
-      console.log("First", loading);
+      
       setTimeout(() => {
-        dispatch(pointsActions.getPoints(data));
-        dispatch(uiActions.hideLoading());
         console.log(value);
-        console.log("Second", loading);
+        getData(value.year);     
+        dispatch(uiActions.hideLoading());
       }, 1000);
     } else {
       dispatch(pointsActions.getPoints([]));

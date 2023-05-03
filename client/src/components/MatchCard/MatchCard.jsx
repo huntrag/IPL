@@ -15,7 +15,6 @@ import { Link } from "react-router-dom";
 
 export default function MatchCard(props) {
   const match = props.match;
-  console.log(match.date);
   const date = new Date(match.date);
 
   return (
@@ -68,7 +67,7 @@ export default function MatchCard(props) {
               </Typography>
             </Stack>
             <Typography sx={{ fontSize: 20 }} variant="p" component="div">
-              {`${match.team1.score}/${match.team1.wickets} (${match.team1.overs})`}
+              {`${match.team1.runs}/${match.team1.wickets} (${match.team1.overs})`}
             </Typography>
           </Stack>
           <Stack
@@ -88,7 +87,7 @@ export default function MatchCard(props) {
               </Typography>
             </Stack>
             <Typography sx={{ fontSize: 20 }} variant="p" component="div">
-              {`${match.team2.score}/${match.team2.wickets} (${match.team2.overs})`}
+              {`${match.team2.runs}/${match.team2.wickets} (${match.team2.overs})`}
             </Typography>
           </Stack>
           <Stack
@@ -111,7 +110,7 @@ export default function MatchCard(props) {
                 color="text.primary"
                 component="div"
               >
-                {`${match.mom.name} (${match.mom.teamShort}) ${match.mom.performance}`}
+                {`${match.man_of_match.name}`}
               </Typography>
             </Stack>
             <Divider />

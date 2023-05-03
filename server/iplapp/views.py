@@ -14,8 +14,9 @@ def featured_players_func(request):
     cursor = connection.cursor()
 
     # Retrieve list of unique player names
-    cursor.execute('SELECT player_names FROM unique_players')
+    cursor.execute('SELECT player_name FROM player')
     player_names = [row[0] for row in cursor.fetchall()]
+    
 
     # Initialize list to hold player stats
     player_stats = []
@@ -33,7 +34,7 @@ def featured_players_func(request):
 
         # Get stats based on player type
         cursor.execute(
-            f"SELECT COUNT(DISTINCT combined_table.MATCH_ID) AS matches_played FROM (SELECT MATCH_ID, Bowler AS Player_Name FROM bowling_scorecard UNION ALL SELECT MATCH_ID, Batsman AS Player_Name FROM batting_scorecard) AS combined_table JOIN unique_players AS p ON combined_table.Player_Name = p.player_names WHERE p.player_names='{name}'")
+            f"SELECT COUNT(DISTINCT combined_table.MATCH_ID) AS matches_played FROM (SELECT MATCH_ID, Bowler AS Player_Name FROM bowling_scorecard UNION ALL SELECT MATCH_ID, Batsman AS Player_Name FROM batting_scorecard) AS combined_table JOIN player AS p ON combined_table.Player_Name = p.player_name WHERE p.player_name='{name}'")
         player_stat['played'] = cursor.fetchone()[0]
 
         # player_stats.append(player_stat)
@@ -75,7 +76,7 @@ def featured_players_func(request):
             # player_stat['total_wickets'] = cursor.fetchone()[0]
 
             cursor.execute(
-                f"SELECT MAX(CONCAT(wickets, '/', runs_conceded)) AS best_figures FROM unique_players p LEFT JOIN bowling_scorecard b ON p.player_names = b.bowler where bowler = '{name}' GROUP BY p.player_names;")
+                f"SELECT MAX(CONCAT(wickets, '/', runs_conceded)) AS best_figures FROM player p LEFT JOIN bowling_scorecard b ON p.player_name = b.bowler where bowler = '{name}' GROUP BY p.player_name;")
             player_stat['sp'].append(cursor.fetchone()[0])
             # player_stat['best_figures'] = cursor.fetchone()[0]
 
@@ -117,12 +118,9 @@ def featured_players_func(request):
 
 @csrf_exempt
 def points_table(request):
-    if request.method == 'POST':
+    if request.method == 'GET':
         # sid = request.POST.get('season_id')
-        # yr = request.POST.get('year')
-        body_unicode=request.body.decode('utf-8')
-        body=json.loads(body_unicode)
-        yr=body['year']
+        yr = request.GET.get('year')
 
         cursor = connection.cursor()
 
@@ -165,9 +163,9 @@ def points_table(request):
         cursor.execute("alter table points_table add last_3rd_match int;")
         cursor.execute("alter table points_table add last_4th_match int;")
         cursor.execute("alter table points_table add last_5th_match int;")
+        cursor.execute("alter table points_table add pos int;")
         cursor.execute("select* from points_table;")
         rows = cursor.fetchall()
-        print(rows)
 
         cursor.execute(f"""
         
@@ -188,27 +186,39 @@ def points_table(request):
         # cursor.execute("DROP PROCEDURE loop_all")
 
         cursor.execute("CALL loop_all();")
-        cursor.execute("SELECT * FROM points_table;")
+        cursor.execute("SET @position := 0;")
+        cursor.execute("UPDATE points_table SET pos = (@position := @position + 1);")
+        cursor.execute("select p.*, t.short from points_table p, teams t where t.team_name = p.team_name;")
         rows = cursor.fetchall()
 
+        mapp = { 0: 'L', 1:'W'}
         data = []
         d = dict()
         for row in rows:
-            d = {'team_name': row[0], 'total_matches': row[1], 'matches_won': row[2], 'matches_lost': row[3], 'points': row[4], 'nrr': row[5],
-                 'last_match': row[6], 'last_2nd_match': row[7], 'last_3rd_match': row[8], 'last_4th_match': row[9], 'last_5th_match': row[10]}
+            d = {'pos':row[11],
+                 'name': row[0], 
+                 'img': "https://scores.iplt20.com/ipl/teamlogos/" + str(row[12]) +".png?v=2" ,
+                 'matches': row[1],
+                 'won': row[2],
+                 'lost': row[3],
+                 'points': row[4],
+                 'nrr': row[5], 
+                 }
+            lst=[]
+            for ind in range(6,11):
+                lst.append(mapp[row[ind]])
+            d['last']=lst
             data.append(d)
-        print(data)
-        json_data = json.dumps(data)
-        return JsonResponse(json_data, safe=False)
+        
+        sorted_data=sorted(data,key=lambda d:(d['pos']))
+        return JsonResponse(sorted_data, safe=False)
 
 
 @csrf_exempt
 def dual_matches(request):
-    if request.method == 'POST':
-        body_unicode=request.body.decode('utf-8')
-        body=json.loads(body_unicode)
-        team1_name = body['team1']
-        team2_name = body['team2']
+    if request.method == 'GET':
+        team1_name = request.GET.get('team1')
+        team2_name = request.GET.get('team2')
         
         cursor = connection.cursor()
         query = ("SELECT md.Match_id,md.Date, md.Match_number, md.Venue, md.Team1, md.Team2, r.Result_details, r.Man_of_match "
@@ -533,16 +543,14 @@ LIMIT 15;
 @csrf_exempt
 def all_matches(request):
     # all_matches_list=[]
-    if request.method == 'POST':
+    if request.method == 'GET':
         
         #########################
             all_matches_list = []
             cursor = connection.cursor()
             cursor.execute(f""" select match_id from match_details""")
             mi = cursor.fetchall()
-            body_unicode=request.body.decode('utf-8')
-            body=json.loads(body_unicode)
-            mid = body['match_id']
+            mid = request.GET.get('match_id')
         #    if (every_match_id[0] == 829763):
             #print(match_now[0])
             match_now = mid

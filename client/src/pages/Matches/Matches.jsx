@@ -5,10 +5,16 @@ import MatchCard from "../../components/MatchCard/MatchCard";
 import data from "../../../../scripts/matches.json";
 import { FilterTeam } from "../../components";
 
+import { useSelector } from "react-redux";
+
 const Matches = () => {
+  const data1=useSelector(state=>state.matchcard.matchcard);
+  // console.log(data1);
+
   return (
     <Stack justifyContent={"center"} alignItems={"center"} spacing={5}>
       <FilterTeam />
+      {data1.length !== 0 && 
       <Stack justifyContent={"center"} alignItems={"center"}>
         <Grid
           container
@@ -21,7 +27,7 @@ const Matches = () => {
           flexGrow={1}
           width="83vw"
         >
-          {data.map((match, index) => {
+          {data1.map((match, index) => {
             return (
               <Grid item sx={{ mt: 2, mb: 2 }} key={match.id}>
                 <MatchCard match={match} />
@@ -30,6 +36,7 @@ const Matches = () => {
           })}
         </Grid>
       </Stack>
+      }
     </Stack>
   );
 };

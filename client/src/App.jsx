@@ -13,6 +13,7 @@ import {
   Points,
   Stats,
   UpcomingMatches,
+  LiveMatch,
   Match,
 } from "./pages";
 import { Navbar, Sidebar, Main } from "./components";
@@ -83,6 +84,10 @@ function App() {
         {
           path: "/match/:id",
           element: <Match />,
+        },
+        {
+          path: "/live-match/:id",
+          element: <LiveMatch />,
         },
       ],
     },

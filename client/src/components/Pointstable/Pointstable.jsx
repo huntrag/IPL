@@ -42,6 +42,8 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
 
 export default function Pointstable() {
   const data = useSelector((state) => state.points.points);
+
+  console.log("Original",data);
   return (
     <Stack
       justifyContent={"center"}
@@ -77,12 +79,12 @@ export default function Pointstable() {
                   <StyledTableCell align="right">
                     <Typography>L</Typography>
                   </StyledTableCell>
-                  <StyledTableCell align="right">
+                  {/* <StyledTableCell align="right">
                     <Typography>T</Typography>
                   </StyledTableCell>
                   <StyledTableCell align="right">
                     <Typography>NR</Typography>
-                  </StyledTableCell>
+                  </StyledTableCell> */}
                   <StyledTableCell align="right">
                     <Typography>NRR</Typography>
                   </StyledTableCell>
@@ -121,12 +123,12 @@ export default function Pointstable() {
                     <StyledTableCell component="th" scope="row" align="right">
                       <Typography>{row.lost}</Typography>
                     </StyledTableCell>
-                    <StyledTableCell component="th" scope="row" align="right">
+                    {/* <StyledTableCell component="th" scope="row" align="right">
                       <Typography>{row.tie}</Typography>
                     </StyledTableCell>
                     <StyledTableCell component="th" scope="row" align="right">
                       <Typography>{row["n/r"]}</Typography>
-                    </StyledTableCell>
+                    </StyledTableCell> */}
                     <StyledTableCell component="th" scope="row" align="right">
                       <Typography>{row.nrr}</Typography>
                     </StyledTableCell>
@@ -135,8 +137,8 @@ export default function Pointstable() {
                     </StyledTableCell>
                     <StyledTableCell>
                       <Stack direction={"row"}>
-                        {row.last.map((res) => (
-                          <span className={`rf ${res} ih-pt-g`}>{res}</span>
+                        {row.last.map((res,index) => (
+                          <span className={`rf ${res} ih-pt-g`} key={index}>{res}</span>
                         ))}
                       </Stack>
                     </StyledTableCell>
