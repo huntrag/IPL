@@ -1,17 +1,17 @@
 import * as React from "react";
 import { useState } from "react";
-import TextField from "@mui/material/TextField";
 import Autocomplete, { createFilterOptions } from "@mui/material/Autocomplete";
 
-import { CssBaseline, Stack } from "@mui/material";
+import { CssBaseline, Stack, TextField } from "@mui/material";
 import { useEffect } from "react";
+import data from "../../../../scripts/results2023_temp.json";
 
 const filterOptions = createFilterOptions({
   matchFrom: "start",
   stringify: (option) => option.short,
 });
 
-function FilterTeam() {
+function FilterLiveTeam() {
   const [team1, setteam1] = useState();
   const [team2, setteam2] = useState();
 
@@ -89,4 +89,4 @@ const teams = [
   { name: "Kochi Tuskers Kerala", short: "KTK" },
 ];
 
-export default FilterTeam;
+export default FilterLiveTeam;

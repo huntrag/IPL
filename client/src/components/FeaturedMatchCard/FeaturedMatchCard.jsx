@@ -15,7 +15,7 @@ import { Link } from "react-router-dom";
 
 export default function FeaturedMatchCard(props) {
   const match = props.match;
-  console.log(match.date);
+  // console.log(match.date);
   const date = new Date(match.date);
 
   return (

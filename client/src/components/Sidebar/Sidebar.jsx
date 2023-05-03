@@ -121,6 +121,7 @@ export default function Sidebar() {
             <Link
               to={item.url}
               style={{ color: "inherit", textDecoration: "inherit" }}
+              key={item.url}
             >
               <ListItem key={item.name} disablePadding>
                 <ListItemButton>

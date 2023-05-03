@@ -2,12 +2,12 @@ import React from "react";
 import { Grid, Stack } from "@mui/material";
 
 import data from "../../../../scripts/results2023_temp.json";
-import { FilterTeam, LiveCard } from "../../components";
+import { FilterLiveTeam, LiveCard } from "../../components";
 
 const Results = () => {
   return (
     <Stack justifyContent={"center"} alignItems={"center"} spacing={5}>
-      <FilterTeam />
+      <FilterLiveTeam />
       <Stack justifyContent={"center"} alignItems={"center"}>
         <Grid
           container
