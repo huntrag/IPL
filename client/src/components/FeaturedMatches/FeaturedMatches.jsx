@@ -13,7 +13,7 @@ import { CssBaseline, Grid, Stack, Tooltip } from "@mui/material";
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
-import data from "../../../../scripts/featuredMatches.json";
+import data from "../../../../scripts/matches.json";
 import FeaturedMatchCard from "../FeaturedMatchCard/FeaturedMatchCard";
 
 function FeaturedMatches() {
@@ -45,7 +45,7 @@ function FeaturedMatches() {
             enableMouseEvents
           >
             {data.map((match, index) => (
-              <div key={match.no}>
+              <div key={match.id}>
                 {Math.abs(activeStep - index) <= 2 ? (
                   <Grid item sx={{ m: 2 }}>
                     <FeaturedMatchCard match={match} />

@@ -10,7 +10,6 @@ import {
   TableRow,
   TableCell,
   TableContainer,
-  Divider,
 } from "@mui/material";
 
 const Summary = (props) => {
@@ -68,7 +67,7 @@ const Summary = (props) => {
           fontWeight="medium"
           color="secondary.contrastText"
         >
-          {`${props.data.mom.name} (${props.data.mom.team}) `}
+          {`${props.data.mom.name} `}
           {bull}
           {` ${props.data.mom.performance}`}
         </Typography>

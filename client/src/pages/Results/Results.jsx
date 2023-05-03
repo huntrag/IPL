@@ -1,14 +1,13 @@
 import React from "react";
-import { Grid, Stack, Paper } from "@mui/material";
-import MatchCard from "../../components/MatchCard/MatchCard";
+import { Grid, Stack } from "@mui/material";
 
-import data from "../../../../scripts/matches.json";
-import { FilterTeam } from "../../components";
+import data from "../../../../scripts/results2023_temp.json";
+import { FilterLiveTeam, LiveCard } from "../../components";
 
-const Matches = () => {
+const Results = () => {
   return (
     <Stack justifyContent={"center"} alignItems={"center"} spacing={5}>
-      <FilterTeam />
+      <FilterLiveTeam />
       <Stack justifyContent={"center"} alignItems={"center"}>
         <Grid
           container
@@ -24,7 +23,7 @@ const Matches = () => {
           {data.map((match, index) => {
             return (
               <Grid item sx={{ mt: 2, mb: 2 }} key={match.id}>
-                <MatchCard match={match} />
+                <LiveCard match={match} />
               </Grid>
             );
           })}
@@ -34,4 +33,4 @@ const Matches = () => {
   );
 };
 
-export default Matches;
+export default Results;

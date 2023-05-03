@@ -9,6 +9,7 @@ import {
   Player,
   Players,
   Matches,
+  Results,
   Points,
   Stats,
   UpcomingMatches,
@@ -66,6 +67,10 @@ function App() {
         {
           path: "/points",
           element: <Points />,
+        },
+        {
+          path: "/results",
+          element: <Results />,
         },
         {
           path: "/stats",

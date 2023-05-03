@@ -11,8 +11,9 @@ import {
   Box,
 } from "@mui/material";
 import { Comments, Scorecard, Summary } from "../../components";
+import { useParams } from "react-router-dom";
 
-import data from "../../../../scripts/match.json";
+import data from "../../../../scripts/match2023_temp.json";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -54,6 +55,14 @@ export default function Match() {
     setValue(newValue);
   };
 
+  const params = useParams().id;
+  console.log(params);
+  let ans = data.filter((obj) => {
+    return obj.id === params;
+  });
+
+  console.log(ans);
+
   return (
     <Stack alignItems={"center"}>
       <Paper sx={{ width: "50%", pt: 1 }}>
@@ -74,10 +83,10 @@ export default function Match() {
         </Box>
         <Stack>
           <TabPanel value={value} index={0}>
-            <Summary data={data[0].summary} />
+            <Summary data={ans[0].summary} />
           </TabPanel>
           <TabPanel value={value} index={1}>
-            <Scorecard data={data[0].scorecard} />
+            <Scorecard data={ans[0].scorecard} />
           </TabPanel>
           <TabPanel value={value} index={2}>
             <Comments />
