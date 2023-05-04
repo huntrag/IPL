@@ -59,7 +59,7 @@ export default function PlayerCard(props) {
               <Typography
                 variant="h5"
                 gutterBottom
-              >{`${player.name}`}</Typography>
+              >{`${player.player_name}`}</Typography>
               <Typography
                 sx={{ fontSize: 14 }}
                 color="text.secondary"

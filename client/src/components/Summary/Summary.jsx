@@ -67,6 +67,7 @@ const Summary = (props) => {
           fontWeight="medium"
           color="secondary.contrastText"
         >
+          {bull}
           {`${props.data.mom.name} `}
           {bull}
           {` ${props.data.mom.performance}`}

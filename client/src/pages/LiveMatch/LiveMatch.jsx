@@ -13,7 +13,7 @@ import {
 import { Comments, Scorecard, Summary } from "../../components";
 import { useParams } from "react-router-dom";
 
-import data from "../../../../scripts/match2023_temp.json";
+import data from "../../../../scripts/match2023.json";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -58,7 +58,7 @@ export default function Match() {
   const params = useParams().id;
   console.log(params);
   let ans = data.filter((obj) => {
-    return obj.id === params;
+    return obj.id == params;
   });
 
   console.log(ans);

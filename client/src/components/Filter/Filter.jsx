@@ -27,20 +27,16 @@ export default function Filter() {
   useEffect(() => {
 
     async function getData(value){
+      dispatch(uiActions.showLoading());
       const res=await axios.get(`http://127.0.0.1:8000/points_table/?year=${value}`);
       const data=await res.data;
       dispatch(pointsActions.getPoints(data));
+      dispatch(uiActions.hideLoading());
       return data;
     }
 
     if (value !== null && value !== undefined) {
-      dispatch(uiActions.showLoading());
-      
-      setTimeout(() => {
-        console.log(value);
         getData(value.year);     
-        dispatch(uiActions.hideLoading());
-      }, 1000);
     } else {
       dispatch(pointsActions.getPoints([]));
     }

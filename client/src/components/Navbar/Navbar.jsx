@@ -70,7 +70,7 @@ const Navbar = () => {
           variant="h4"
           component="div"
           sx={{ flexGrow: 1 }}
-          fontFamily="cursive"
+          fontFamily={"inherit"}
         >
           IPL Stats
         </Typography>
@@ -80,7 +80,7 @@ const Navbar = () => {
           color="inherit"
           sx={{
             "&:hover": {
-              backgroundColor: "red",
+              backgroundColor: "blue",
             },
           }}
         >

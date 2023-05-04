@@ -19,10 +19,10 @@ export default function FeaturedMatchCard(props) {
   const date = new Date(match.date);
 
   return (
-    <Link
-      to={`../match/${match.id}`}
-      style={{ color: "inherit", textDecoration: "inherit" }}
-    >
+    // <Link
+    //   to={`../match/${match.id}`}
+    //   style={{ color: "inherit", textDecoration: "inherit" }}
+    // >
       <Card key={match.id} sx={{ minWidth: 275 }}>
         <CssBaseline />
         <CardContent>
@@ -111,7 +111,7 @@ export default function FeaturedMatchCard(props) {
                 color="text.primary"
                 component="div"
               >
-                {`${match.mom.name} (${match.mom.teamShort}) ${match.mom.performance}`}
+                {`${match.mom.name} ${match.mom.performance}`}
               </Typography>
             </Stack>
             <Divider />
@@ -126,6 +126,6 @@ export default function FeaturedMatchCard(props) {
           </Stack>
         </CardContent>
       </Card>
-    </Link>
+    // </Link>
   );
 }

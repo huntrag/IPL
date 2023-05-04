@@ -8,7 +8,7 @@ import { Avatar, CssBaseline, Stack } from "@mui/material";
 
 export default function UpcomingMatchCard(props) {
   return (
-    <Card key={props.match.no} sx={{ minWidth: 275 }}>
+    <Card key={props.match.no} sx={{ width:475,minWidth: 275,maxHeight:195 }}>
       <CssBaseline />
       <CardContent>
         <Stack direction="row" justifyContent={"space-between"} spacing={9}>
@@ -37,7 +37,7 @@ export default function UpcomingMatchCard(props) {
               {`${props.match.team1Short}`}
             </Typography>
           </Stack>
-          <Typography>vs</Typography>
+          <Typography sx={{fontSize:20}}>vs</Typography>
           <Stack direction="row" alignItems={"center"}>
             <Avatar
               alt="Example Alt"

@@ -6,6 +6,7 @@ import Autocomplete, { createFilterOptions } from "@mui/material/Autocomplete";
 import { CssBaseline, Stack } from "@mui/material";
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
+import { uiActions } from "../../store/ui-slice";
 import { matchcardActions } from "../../store/matchcard-slice";
 import axios from "axios";
 
@@ -30,21 +31,17 @@ function FilterTeam() {
 
   useEffect(() => {
     async function getData(arg){
+      dispatch(uiActions.showLoading());
       const res=await axios.get(`http://127.0.0.1:8000/dual_matches/?team1=${arg.team1}&team2=${arg.team2}`);
       const data=await res.data;
       // dispatch(pointsActions.getPoints(data));
       dispatch(matchcardActions.getmatchcard(data));
+      dispatch(uiActions.hideLoading());
       return data;
     }
 
-    if (team1 != null && team2 != null) {
-      console.log({
-        team1: team1.name,
-        team1short: team1.short,
-        team2: team2.name,
-        team2short: team2.short,
-      });
-      getData({"team1":team1.name,"team2":team2.name})
+    if (team1 != null && team2 != null) {         
+        getData({"team1":team1.name,"team2":team2.name});      
     }
   }, [team1, team2]);
 

@@ -7,7 +7,7 @@ import { Stack } from "@mui/material";
 const Innings = (props) => {
   return (
     <Stack direction="column" alignItems={"center"} spacing={2}>
-      <Batting data={props.data.batting} />
+      <Batting data={props.data.batting} runs={props.data.totalruns} overs={props.data.overs} wickets={props.data.totalwickets}/>
       <Bowling data={props.data.bowling} />
     </Stack>
   );

@@ -1,7 +1,7 @@
 import React from "react";
 import { Grid, Stack } from "@mui/material";
 
-import data from "../../../../scripts/results2023_temp.json";
+import data from "../../../../scripts/results2023.json";
 import { FilterLiveTeam, LiveCard } from "../../components";
 
 const Results = () => {

@@ -6,7 +6,7 @@ import TableContainer from "@mui/material/TableContainer";
 import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
-import { Box, Typography, Stack } from "@mui/material";
+import { Box, Typography, Stack ,Divider} from "@mui/material";
 
 // img: https://scores.iplt20.com/ipl/teamlogos/LSG.png
 
@@ -43,6 +43,37 @@ export default function Batting(props) {
                 >{`(${unit.name}, ${unit.overs} ov) `}</Typography>
               </React.Fragment>
             ))}
+            <Divider sx={{mt:2,mb:2, width:"100%"}}/>
+            <Stack direction="row" justifyContent={"space-between"}>
+            <Typography component={"span"} color={"black"}>
+              Extras
+            </Typography>
+            <Box>
+
+            <Typography component={"span"} color={"black"} sx={{mr:1}}>
+              {`${props.data.totalextras}`}
+            </Typography>
+            <Typography component={"span"} color={"black"}>
+              {`${props.data.extrasinfo}`}
+            </Typography>
+            </Box>
+            </Stack>
+            {/* Divider 2 for total runs */}
+            <Divider sx={{mt:2,mb:2, width:"100%"}}/>
+            <Stack direction="row" justifyContent={"space-between"}>
+            <Typography component={"span"} color={"black"}>
+              Total Runs
+            </Typography>
+            <Box>
+
+            <Typography component={"span"} color={"black"} sx={{mr:1}}>
+              {`${props.runs}`}
+            </Typography>
+            <Typography component={"span"} color={"black"}>
+              {`(${props.wickets} wkts, ${props.overs} ov)`}
+            </Typography>
+            </Box>
+            </Stack>
           </caption>
           <TableHead>
             <TableRow>

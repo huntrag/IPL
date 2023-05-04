@@ -4,6 +4,8 @@ import pointsSlice from "./points-slice";
 import uiSlice from "./ui-slice";
 import matchcardSlice from "./matchcard-slice";
 import scorecardSlice from "./scorecard-slice";
+import playersSlice from "./players-slice";
+import statsSlice from "./stats-slice";
 
 const store = configureStore({
   reducer: {
@@ -12,6 +14,8 @@ const store = configureStore({
     liveteam: liveteamSlice.reducer,
     matchcard:matchcardSlice.reducer,
     scorecard:scorecardSlice.reducer,
+    players:playersSlice.reducer,
+    stats:statsSlice.reducer
   },
 });
 

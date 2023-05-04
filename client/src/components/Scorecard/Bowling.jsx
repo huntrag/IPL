@@ -38,7 +38,7 @@ export default function Bowling(props) {
                 <Typography fontWeight={"500"}>O</Typography>
               </TableCell>
               <TableCell align="right">
-                <Typography fontWeight={"500"}>M</Typography>
+                <Typography fontWeight={"500"}>M/D</Typography>
               </TableCell>
               <TableCell align="right">
                 <Typography fontWeight={"500"}>R</Typography>
